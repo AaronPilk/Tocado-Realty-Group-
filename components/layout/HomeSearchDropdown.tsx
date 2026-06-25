@@ -30,7 +30,7 @@ export function HomeSearchDropdown() {
               <Link href="/search" className="text-[12px] font-semibold uppercase tracking-[0.12em] text-orange hover:text-black">
                 Browse All Listings →
               </Link>
-              <Link href="/locations" className="text-[12px] font-semibold uppercase tracking-[0.12em] text-black/70 hover:text-orange">
+              <Link href="/neighborhoods" className="text-[12px] font-semibold uppercase tracking-[0.12em] text-black/70 hover:text-orange">
                 Compare Neighborhoods →
               </Link>
             </div>
@@ -42,9 +42,9 @@ export function HomeSearchDropdown() {
                   </h4>
                   <ul className="space-y-1.5">
                     {group.items.map((n) => (
-                      <li key={n.name}>
+                      <li key={n.slug}>
                         <Link
-                          href={`/search?q=${encodeURIComponent(n.query)}`}
+                          href={`/neighborhoods/${n.slug}`}
                           className="text-[13px] leading-snug text-black/75 hover:text-orange"
                         >
                           {n.name}
