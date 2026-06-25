@@ -27,10 +27,10 @@ export function Hero() {
         <Image
           src="/images/logo-light.png"
           alt={siteConfig.name}
-          width={616}
-          height={196}
+          width={308}
+          height={98}
           priority
-          className="mx-auto mb-9 h-14 w-auto md:h-16"
+          className="mx-auto mb-9 h-10 w-auto md:h-12"
         />
 
         <div className="mx-auto mb-8 inline-flex rounded-full border border-white/30 bg-black/50 px-6 py-3 backdrop-blur-sm">

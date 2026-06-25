@@ -22,9 +22,9 @@ export function Footer() {
             <Image
               src="/images/logo-light.png"
               alt={siteConfig.name}
-              width={616}
-              height={196}
-              className="h-11 w-auto"
+              width={308}
+              height={98}
+              className="h-10 w-auto"
             />
             <p className="mt-5 text-sm leading-6 text-white/60">
               {siteConfig.heroBody}
