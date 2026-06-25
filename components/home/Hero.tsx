@@ -23,18 +23,16 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/45 to-black/85" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        <div className="mx-auto mb-8 inline-flex rounded-full border border-white/30 bg-black/50 px-6 py-3 backdrop-blur-sm">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#a9d8c8]">
-            {siteConfig.heroEyebrow}
-          </p>
-        </div>
+        <p className="hero-text-shadow mb-8 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#a9d8c8]">
+          {siteConfig.heroEyebrow}
+        </p>
 
         <h1 className="hero-text-shadow font-serif text-5xl leading-[1.02] text-white md:text-7xl lg:text-8xl">
           {siteConfig.heroHeadlineMain}
           <span className="glow-green block italic text-[#9ed3c1]">{siteConfig.heroHeadlineAccent}</span>
         </h1>
 
-        <p className="hero-text-shadow mx-auto mt-8 max-w-2xl rounded-2xl bg-black/40 px-8 py-5 text-sm leading-7 text-white/95 backdrop-blur-sm md:text-base">
+        <p className="hero-text-shadow mx-auto mt-8 max-w-2xl px-6 text-sm leading-7 text-white/95 md:text-base">
           {siteConfig.heroBody}
         </p>
 
