@@ -43,6 +43,8 @@ export function SearchExperience() {
     const sp = new URLSearchParams(window.location.search);
     const q = sp.get("q") || sp.get("query") || "";
     if (q) { setQuery(q); setHeroInput(q); }
+    const mp = sp.get("maxPrice");
+    if (mp) setMaxPrice(Number(mp));
   }, []);
 
   const search = useCallback(async () => {

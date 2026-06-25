@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/buy",
     "/sell",
     "/home-valuation",
+    "/mortgage-calculator",
     "/team",
     "/why-list-with-us",
     "/join-the-team",

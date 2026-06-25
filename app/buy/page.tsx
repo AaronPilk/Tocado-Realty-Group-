@@ -38,7 +38,7 @@ export default function BuyPage() {
         treatment="dark"
       >
         <Button href="/search" variant="orange">Browse Listings</Button>
-        <Button href="/contact" variant="outlineLight">Talk to an Agent</Button>
+        <Button href="/mortgage-calculator" variant="outlineLight">Affordability Calculator</Button>
       </PageHero>
 
       <Section className="bg-cream">

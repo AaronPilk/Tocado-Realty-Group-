@@ -14,5 +14,6 @@ export const footerServices = [
   { label: "Buy a Home", href: "/buy" },
   { label: "Sell a Home", href: "/sell" },
   { label: "Home Valuation", href: "/home-valuation" },
+  { label: "Affordability Calculator", href: "/mortgage-calculator" },
   { label: "Join The Team", href: "/join-the-team" },
 ];
