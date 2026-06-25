@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-black: #090909;
+  --color-charcoal: #171717;
+  --color-ivory: #f1ede6;
+  --color-cream: #f7f4ef;
+  --color-white: #ffffff;
+  --color-orange: #f04b16;
+  --color-muted: #7a7a7a;
+  --color-border: #d8d2c8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-black);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-weight: 500;
+}
+
+/* Reusable luxury image placeholder treatment.
+   Swap any element using these classes for a real <Image> when photos arrive. */
+.photo-fill {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+.photo-dark {
+  background:
+    linear-gradient(120deg, rgba(9, 9, 9, 0.92) 0%, rgba(23, 23, 23, 0.78) 55%, rgba(40, 30, 22, 0.7) 100%),
+    radial-gradient(120% 90% at 80% 10%, rgba(240, 75, 22, 0.16) 0%, transparent 55%);
+}
+.photo-warm {
+  background:
+    linear-gradient(135deg, #e7ded1 0%, #d9cdb9 45%, #cdbfa6 100%),
+    radial-gradient(90% 80% at 20% 15%, rgba(240, 75, 22, 0.1) 0%, transparent 60%);
+}
+.photo-charcoal {
+  background:
+    linear-gradient(135deg, #1b1b1b 0%, #232323 60%, #2c241d 100%);
+}
+
+/* Sales ticker marquee */
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-ticker {
+  animation: ticker 40s linear infinite;
+}
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+::selection {
+  background: var(--color-orange);
+  color: #fff;
+}
