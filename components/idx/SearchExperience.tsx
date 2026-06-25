@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { Listing } from "@/lib/idx/types";
+import { searchMockListings } from "@/lib/idx/mock-provider";
 import { ListingCard } from "./ListingCard";
 import { IDXEmbed } from "./IDXEmbed";
 
@@ -46,21 +47,19 @@ export function SearchExperience() {
 
   const search = useCallback(async () => {
     setLoading(true);
-    const p = new URLSearchParams();
-    if (query) p.set("query", query);
-    if (minPrice) p.set("minPrice", String(minPrice));
-    if (maxPrice) p.set("maxPrice", String(maxPrice));
-    if (beds) p.set("beds", String(beds));
-    if (baths) p.set("baths", String(baths));
-    p.set("sort", sort);
-    try {
-      const res = await fetch(`/api/idx/search?${p.toString()}`);
-      const data = await res.json();
-      setListings(data.listings || []);
-      setTotal(data.total || 0);
-    } catch {
-      setListings([]); setTotal(0);
-    }
+    // Static site: filter the listing data directly (no server API needed).
+    // When the Canopy MLS Grid API is connected later, swap this for a fetch.
+    const data = await searchMockListings({
+      query: query || undefined,
+      minPrice: minPrice || undefined,
+      maxPrice: maxPrice || undefined,
+      beds: beds || undefined,
+      baths: baths || undefined,
+      sort: sort as never,
+      limit: 48,
+    });
+    setListings(data.listings);
+    setTotal(data.total);
     setLoading(false);
   }, [query, minPrice, maxPrice, beds, baths, sort]);
 

@@ -4,8 +4,13 @@ import { Section } from "@/components/ui/Section";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { LeadForm } from "@/components/forms/LeadForm";
 import { getListing } from "@/lib/idx/provider";
+import { mockListings } from "@/data/mock-listings";
 import { formatPrice, formatNumber } from "@/lib/utils";
 import { siteConfig } from "@/data/site";
+
+export function generateStaticParams() {
+  return mockListings.map((l) => ({ id: l.id }));
+}
 
 const treatmentClass: Record<string, string> = {
   warm: "photo-warm",

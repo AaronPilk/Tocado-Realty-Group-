@@ -7,8 +7,6 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      // Keep transient/search-result pages out of the index.
-      disallow: ["/search/results", "/api/"],
     },
     sitemap: `${baseUrl}/sitemap.xml`,
   };

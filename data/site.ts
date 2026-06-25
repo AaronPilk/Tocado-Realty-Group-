@@ -22,6 +22,13 @@ export const siteConfig = {
   email: "[[hello@tocadorealtygroup.com]]",
   address: "[[Office Address, Charlotte, NC 28200]]",
 
+  // ── Lead delivery (Formspree → emails Stephenie) ────────────
+  // 1. Make a free form at https://formspree.io (set the notification email to
+  //    your mom's address). 2. Paste the endpoint it gives you below, e.g.
+  //    "https://formspree.io/f/abcdwxyz". Until set, forms show success but
+  //    won't send — so add this before launch.
+  formEndpoint: "[[https://formspree.io/f/YOUR_FORM_ID]]",
+
   // ── Top bar / hero copy ─────────────────────────────────────
   topBar: "Tocado Realty Group · Serving North Carolina",
   heroEyebrow: "North Carolina Real Estate, Built With Intention",
