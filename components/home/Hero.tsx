@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/data/site";
 
@@ -20,30 +19,32 @@ export function Hero() {
       >
         <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
-      {/* Darken for text legibility — solid base + bottom gradient */}
-      <div className="absolute inset-0 bg-black/55" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/45 to-black/80" />
+      {/* Darken for text legibility — solid base + gradient */}
+      <div className="absolute inset-0 bg-black/45" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/45 to-black/85" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <Image
           src="/images/logo-light.png"
           alt={siteConfig.name}
-          width={354}
-          height={150}
+          width={616}
+          height={196}
           priority
-          className="mx-auto mb-9 h-20 w-auto md:h-24"
+          className="mx-auto mb-9 h-14 w-auto md:h-16"
         />
 
-        <div className="mx-auto mb-8 inline-flex rounded-full border border-white/25 bg-black/35 px-6 py-3 backdrop-blur-sm">
-          <Eyebrow>{siteConfig.heroEyebrow}</Eyebrow>
+        <div className="mx-auto mb-8 inline-flex rounded-full border border-white/30 bg-black/50 px-6 py-3 backdrop-blur-sm">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#a9d8c8]">
+            {siteConfig.heroEyebrow}
+          </p>
         </div>
 
-        <h1 className="font-serif text-5xl leading-[1.02] text-white md:text-7xl lg:text-8xl">
+        <h1 className="hero-text-shadow font-serif text-5xl leading-[1.02] text-white md:text-7xl lg:text-8xl">
           {siteConfig.heroHeadlineMain}
-          <span className="block italic text-orange">{siteConfig.heroHeadlineAccent}</span>
+          <span className="block italic text-[#9ed3c1]">{siteConfig.heroHeadlineAccent}</span>
         </h1>
 
-        <p className="mx-auto mt-8 max-w-2xl rounded-2xl bg-black/35 px-8 py-5 text-sm leading-7 text-white/90 backdrop-blur-sm md:text-base">
+        <p className="hero-text-shadow mx-auto mt-8 max-w-2xl rounded-2xl bg-black/40 px-8 py-5 text-sm leading-7 text-white/95 backdrop-blur-sm md:text-base">
           {siteConfig.heroBody}
         </p>
 

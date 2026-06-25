@@ -30,10 +30,10 @@ export function Header() {
           <Image
             src="/images/logo.png"
             alt={siteConfig.name}
-            width={354}
-            height={150}
+            width={616}
+            height={196}
             priority
-            className="h-11 w-auto md:h-12"
+            className="h-9 w-auto md:h-11"
           />
         </Link>
 
