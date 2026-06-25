@@ -11,7 +11,7 @@ export const metadata = buildMetadata({
 
 export default function PrivacyPolicyPage() {
   return (
-    <LegalPage title="Privacy Policy" updated="[[Month YYYY]]">
+    <LegalPage title="Privacy Policy" updated="June 2026">
       {/* TEMPLATE — have an attorney review before launch. */}
       <p>
         {siteConfig.name} (&quot;we,&quot; &quot;us&quot;) respects your privacy.

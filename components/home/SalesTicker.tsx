@@ -9,7 +9,7 @@ export function SalesTicker() {
           <span key={i} className="flex items-center gap-3 text-[12px] uppercase tracking-[0.12em] text-white/70">
             <span className="text-orange">↗</span>
             <span className="font-semibold text-orange">{it.label}</span>
-            <span>· {it.address} · {it.city}, {it.state} · {it.price}</span>
+            <span>· {it.address} · {it.city}, {it.state}{it.price ? ` · ${it.price}` : ""}</span>
           </span>
         ))}
       </div>

@@ -11,7 +11,7 @@ export const metadata = buildMetadata({
 
 export default function TermsPage() {
   return (
-    <LegalPage title="Terms of Service" updated="[[Month YYYY]]">
+    <LegalPage title="Terms of Service" updated="June 2026">
       {/* TEMPLATE — have an attorney review before launch. */}
       <p>
         By using this website, you agree to these terms. If you do not agree,

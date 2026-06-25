@@ -12,15 +12,15 @@ export const siteConfig = {
   name: "Tocado Realty Group",
   shortName: "Tocado",
   logoMark: "TRG", // crest text until a real logo is supplied
-  brokerage: "[[Brokerage Name]]", // NC requires brokerage affiliation — still needed
+  brokerage: "Tocado Realty Group", // her own NC brokerage firm
   tagline: "Real Estate, Done With Intention.",
   marketLabel: "Serving North Carolina",
 
   // ── Contact ─────────────────────────────────────────────────
   phone: "(704) 661-3414",
   phoneHref: "tel:+17046613414",
-  email: "Stocado@stocado.com", // [[double-check spelling — Tocado vs Stocado?]]
-  address: "[[Office Address, Charlotte, NC 28200]]",
+  email: "S.tocado@rtocado.com",
+  address: "Charlotte, North Carolina", // [[add full office street address when ready]]
 
   // ── Lead delivery (Formspree → emails Stephenie) ────────────
   // 1. Make a free form at https://formspree.io (set the notification email to
@@ -38,10 +38,11 @@ export const siteConfig = {
     "A relationship-first team guiding buyers, sellers, and families across North Carolina with clarity, strategy, and long-term care.",
 
   // ── Social ──────────────────────────────────────────────────
+  // Leave blank to hide the icon until the account exists. Paste a URL to show it.
   social: {
-    instagram: "[[https://instagram.com/yourfirm]]",
-    facebook: "[[https://facebook.com/yourfirm]]",
-    linkedin: "[[https://linkedin.com/company/yourfirm]]",
+    instagram: "",
+    facebook: "",
+    linkedin: "",
     youtube: "",
   },
 
@@ -55,14 +56,14 @@ export const siteConfig = {
 
   // ── Legal / compliance (REVIEW WITH BROKER BEFORE LAUNCH) ────
   legal: {
-    license: "[[License #: __________ ]]",
-    brokerageLicense: "[[Brokerage License #: __________ ]]",
+    license: "NC Broker License #262424",
+    brokerageLicense: "NC Firm License #C34507",
     equalHousing: true,
     realtorMark: false, // only set true if legally permitted to use REALTOR®
     idxDisclaimer:
       "Listing information is deemed reliable but not guaranteed and should be independently verified. IDX information is provided exclusively for consumers' personal, non-commercial use and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing.",
     consent:
-      "I agree to be contacted by [[Firm Name]] by phone, email, and text regarding real estate services. Message and data rates may apply. I can opt out at any time.",
+      "I agree to be contacted by Tocado Realty Group by phone, email, and text regarding real estate services. Message and data rates may apply. I can opt out at any time.",
   },
 } as const;
 

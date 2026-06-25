@@ -99,7 +99,7 @@ export function Footer() {
           </div>
           <div className="mt-6 space-y-2 text-[11px] leading-5 text-white/40">
             <p>
-              {siteConfig.name} is affiliated with {siteConfig.brokerage}. {siteConfig.legal.license} · {siteConfig.legal.brokerageLicense}
+              {siteConfig.name} · {siteConfig.legal.license} · {siteConfig.legal.brokerageLicense}
             </p>
             <p>{siteConfig.legal.idxDisclaimer}</p>
             <p className="flex items-center gap-2">

@@ -49,7 +49,7 @@ export default function ContactPage() {
                 <p className="font-medium">{siteConfig.address}</p>
               </div>
               <div className="border-t border-line pt-5 text-[12px] leading-5 text-muted">
-                {siteConfig.name} · affiliated with {siteConfig.brokerage}
+                {siteConfig.name} · {siteConfig.legal.license}
               </div>
             </div>
           </aside>

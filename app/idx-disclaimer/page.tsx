@@ -23,8 +23,8 @@ export default function IdxDisclaimerPage() {
       </p>
       <p>
         Listings displayed may be held by brokerage firms other than{" "}
-        {siteConfig.name} / {siteConfig.brokerage}, and are marked with the
-        appropriate attribution where required by Canopy MLS display rules.
+        {siteConfig.name}, and are marked with the appropriate attribution where
+        required by Canopy MLS display rules.
       </p>
       <p>
         Some properties which appear for sale on this website may no longer be
