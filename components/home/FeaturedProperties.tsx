@@ -62,8 +62,8 @@ export function FeaturedProperties() {
             <h2 className="mt-3 font-serif text-4xl md:text-5xl">Featured Properties</h2>
           </div>
           <Link
-            href="/featured-listings"
-            className="inline-flex w-fit items-center gap-2 border border-black px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] transition-colors hover:bg-black hover:text-white"
+            href="/search"
+            className="inline-flex w-fit items-center gap-2 rounded-full border border-black px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] transition-colors hover:bg-black hover:text-white"
           >
             View All Listings →
           </Link>
