@@ -17,9 +17,9 @@ export const siteConfig = {
   marketLabel: "Serving North Carolina",
 
   // ── Contact ─────────────────────────────────────────────────
-  phone: "(704) 555-0142", // [[MOCK — replace with real number]]
-  phoneHref: "tel:+17045550142",
-  email: "[[hello@tocadorealtygroup.com]]",
+  phone: "(704) 661-3414",
+  phoneHref: "tel:+17046613414",
+  email: "Stocado@stocado.com", // [[double-check spelling — Tocado vs Stocado?]]
   address: "[[Office Address, Charlotte, NC 28200]]",
 
   // ── Lead delivery (Formspree → emails Stephenie) ────────────
