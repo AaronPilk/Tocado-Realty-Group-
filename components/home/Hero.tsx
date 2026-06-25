@@ -19,7 +19,9 @@ export function Hero() {
       >
         <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
-      <div className="absolute inset-0 bg-black/60" />
+      {/* Darken for text legibility — solid base + bottom gradient */}
+      <div className="absolute inset-0 bg-black/55" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/45 to-black/80" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <div className="mx-auto mb-9 flex h-24 w-24 items-center justify-center rounded-full border border-white/60 text-white">
@@ -28,7 +30,7 @@ export function Hero() {
           </span>
         </div>
 
-        <div className="mx-auto mb-8 inline-flex border border-white/20 bg-white/10 px-6 py-3 backdrop-blur-sm">
+        <div className="mx-auto mb-8 inline-flex rounded-full border border-white/25 bg-black/35 px-6 py-3 backdrop-blur-sm">
           <Eyebrow>{siteConfig.heroEyebrow}</Eyebrow>
         </div>
 
@@ -37,7 +39,7 @@ export function Hero() {
           <span className="block italic text-orange">{siteConfig.heroHeadlineAccent}</span>
         </h1>
 
-        <p className="mx-auto mt-8 max-w-2xl bg-white/10 px-8 py-5 text-sm leading-7 text-white/80 backdrop-blur-sm md:text-base">
+        <p className="mx-auto mt-8 max-w-2xl rounded-2xl bg-black/35 px-8 py-5 text-sm leading-7 text-white/90 backdrop-blur-sm md:text-base">
           {siteConfig.heroBody}
         </p>
 
