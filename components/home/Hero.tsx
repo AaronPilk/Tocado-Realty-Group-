@@ -5,8 +5,21 @@ import { siteConfig } from "@/data/site";
 export function Hero() {
   return (
     <section className="relative flex min-h-[calc(100vh-120px)] items-center justify-center overflow-hidden bg-black">
-      {/* Replace this treatment with a real <Image fill priority /> hero photo */}
-      <div className="photo-fill photo-dark" />
+      {/* Hero background video (muted/looping). Poster shows while it loads or
+          if autoplay is blocked. Swap files in /public/videos + /public/images. */}
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/images/hero-poster.jpg"
+        aria-hidden="true"
+      >
+        <source src="/videos/hero.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-black/60" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <div className="mx-auto mb-9 flex h-24 w-24 items-center justify-center rounded-full border border-white/60 text-white">
