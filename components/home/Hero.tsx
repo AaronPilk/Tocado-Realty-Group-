@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/data/site";
 
@@ -24,15 +23,6 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/45 to-black/85" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        <Image
-          src="/images/logo-light.png"
-          alt={siteConfig.name}
-          width={308}
-          height={98}
-          priority
-          className="mx-auto mb-9 h-10 w-auto md:h-12"
-        />
-
         <div className="mx-auto mb-8 inline-flex rounded-full border border-white/30 bg-black/50 px-6 py-3 backdrop-blur-sm">
           <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#a9d8c8]">
             {siteConfig.heroEyebrow}
