@@ -77,12 +77,12 @@ export function LeadForm({
 
   const labelColor = dark ? "text-white/60" : "text-black/60";
   const inputClass = dark
-    ? "w-full border border-white/20 bg-transparent px-4 py-3 text-sm text-white placeholder:text-white/30 focus:border-orange focus:outline-none"
-    : "w-full border border-line bg-white px-4 py-3 text-sm focus:border-orange focus:outline-none";
+    ? "w-full rounded-xl border border-white/20 bg-transparent px-4 py-3 text-sm text-white placeholder:text-white/30 focus:border-orange focus:outline-none"
+    : "w-full rounded-2xl border border-black/5 shadow-float bg-white px-4 py-3 text-sm focus:border-orange focus:outline-none";
 
   if (status === "done") {
     return (
-      <div className={`border p-8 text-center ${dark ? "border-white/20 text-white" : "border-line bg-white"}`}>
+      <div className={`rounded-2xl border p-8 text-center ${dark ? "border-white/20 text-white" : "border-black/5 bg-white shadow-float"}`}>
         <p className="font-serif text-2xl">Thank you — we&apos;ll be in touch shortly.</p>
         <p className={`mt-2 text-sm ${dark ? "text-white/60" : "text-muted"}`}>
           Need something sooner? Call us at {siteConfig.phone}.
@@ -122,7 +122,7 @@ export function LeadForm({
         <button
           type="submit"
           disabled={status === "sending"}
-          className="w-full bg-orange px-7 py-4 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-black disabled:opacity-60 sm:w-auto"
+          className="w-full rounded-full bg-orange px-8 py-4 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-all hover:bg-black hover:shadow-lg disabled:opacity-60 sm:w-auto"
         >
           {status === "sending" ? "Sending..." : submitLabel}
         </button>

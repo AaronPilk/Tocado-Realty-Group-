@@ -27,7 +27,7 @@ export default function AgentProfilePage({ params }: { params: { slug: string } 
     <Section className="bg-cream">
       <div className="grid gap-12 lg:grid-cols-[420px_1fr]">
         <div>
-          <div className="relative aspect-[3/4] overflow-hidden border border-line">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-black/5 shadow-float">
             {agent.image ? (
               <Image src={agent.image} alt={agent.name} fill className="object-cover" sizes="420px" priority />
             ) : (
@@ -46,7 +46,7 @@ export default function AgentProfilePage({ params }: { params: { slug: string } 
             <a href={`mailto:${agent.email}`} className="font-medium hover:text-orange">{agent.email}</a>
           </div>
 
-          <div className="mt-10 max-w-lg border border-line bg-white p-6">
+          <div className="mt-10 max-w-lg rounded-2xl border border-black/5 shadow-float bg-white p-6">
             <h2 className="font-serif text-2xl">Contact {agent.name.split(" ")[0]}</h2>
             <div className="mt-5">
               <LeadForm

@@ -25,7 +25,7 @@ export function AgentGrid() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search agents..."
-          className="w-full border border-line bg-white px-4 py-3 text-sm focus:border-orange focus:outline-none md:max-w-xs"
+          className="w-full rounded-2xl border border-black/5 shadow-float bg-white px-4 py-3 text-sm focus:border-orange focus:outline-none md:max-w-xs"
         />
         <div className="flex flex-wrap gap-2">
           {teamOffices.map((o) => (
@@ -33,7 +33,7 @@ export function AgentGrid() {
               key={o}
               onClick={() => setOffice(o)}
               className={`px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.12em] transition-colors ${
-                office === o ? "bg-black text-white" : "border border-line text-black/70 hover:border-black"
+                office === o ? "bg-black text-white" : "rounded-2xl border border-black/5 shadow-float text-black/70 hover:border-black"
               }`}
             >
               {o}

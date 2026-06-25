@@ -16,7 +16,7 @@ export function IDXEmbed({ title = "Search Homes", minHeight = 1000 }: IDXEmbedP
 
   if (iframeSrc) {
     return (
-      <div className="w-full overflow-hidden border border-line bg-white">
+      <div className="w-full overflow-hidden rounded-2xl border border-black/5 shadow-float bg-white">
         <iframe
           src={iframeSrc}
           title={title}
@@ -31,7 +31,7 @@ export function IDXEmbed({ title = "Search Homes", minHeight = 1000 }: IDXEmbedP
   if (widgetHtml) {
     return (
       <div
-        className="w-full border border-line bg-white"
+        className="w-full rounded-2xl border border-black/5 shadow-float bg-white"
         dangerouslySetInnerHTML={{ __html: widgetHtml }}
       />
     );

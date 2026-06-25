@@ -58,7 +58,7 @@ export function Header() {
           </a>
           <Link
             href="/contact"
-            className="whitespace-nowrap bg-black px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition-colors hover:bg-orange"
+            className="whitespace-nowrap rounded-full bg-black px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-white transition-all hover:bg-orange hover:shadow-lg"
           >
             Contact Us
           </Link>

@@ -49,7 +49,7 @@ export function MobileNav() {
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="bg-orange px-6 py-4 text-center text-[12px] font-semibold uppercase tracking-[0.16em]"
+              className="rounded-full bg-orange px-6 py-4 text-center text-[12px] font-semibold uppercase tracking-[0.16em]"
             >
               Contact Us
             </Link>

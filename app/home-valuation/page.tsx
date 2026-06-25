@@ -20,7 +20,7 @@ export default function HomeValuationPage() {
         treatment="dark"
       />
       <Section className="bg-cream">
-        <div className="mx-auto max-w-2xl border border-line bg-white p-8">
+        <div className="mx-auto max-w-2xl rounded-2xl border border-black/5 shadow-float bg-white p-8">
           <LeadForm
             leadType="home-valuation"
             fields={["firstName", "lastName", "email", "phone", "propertyAddress", "timeline", "message"]}

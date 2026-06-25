@@ -40,7 +40,7 @@ export default function JoinTeamPage() {
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {support.map((s) => (
-            <div key={s.t} className="border border-line bg-white p-6">
+            <div key={s.t} className="rounded-2xl border border-black/5 shadow-float bg-white p-6">
               <h3 className="font-serif text-xl">{s.t}</h3>
               <p className="mt-2 text-sm leading-6 text-muted">{s.d}</p>
             </div>
@@ -62,7 +62,7 @@ export default function JoinTeamPage() {
               ))}
             </div>
           </div>
-          <div className="border border-line bg-cream p-8">
+          <div className="rounded-2xl border border-black/5 shadow-float bg-cream p-8">
             <h2 className="font-serif text-2xl">Apply or book a call</h2>
             <p className="mt-2 text-sm text-muted">Confidential — let&apos;s see if it&apos;s a fit.</p>
             <div className="mt-6">

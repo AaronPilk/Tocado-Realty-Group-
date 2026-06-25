@@ -73,3 +73,28 @@ h1, h2, h3, h4 {
   background: var(--color-orange);
   color: #fff;
 }
+
+/* ── Apple-style floating cards ───────────────────────────────
+   .shadow-float = resting soft shadow
+   .lift         = smooth hover float + highlight (add to interactive cards) */
+.shadow-float {
+  box-shadow: 0 2px 16px rgba(15, 15, 15, 0.05);
+}
+.lift {
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
+  will-change: transform;
+}
+.lift:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 32px 64px -28px rgba(15, 15, 15, 0.34);
+}
+/* Soft float for dark-section cards */
+.lift-dark {
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 0.45s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.lift-dark:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 32px 64px -28px rgba(0, 0, 0, 0.6);
+}

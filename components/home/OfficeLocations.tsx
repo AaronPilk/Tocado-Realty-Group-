@@ -54,7 +54,7 @@ export function OfficeLocations() {
           </div>
 
           {/* Image card */}
-          <div className="relative min-h-[420px] overflow-hidden border border-line">
+          <div className="relative min-h-[420px] overflow-hidden rounded-2xl border border-black/5 shadow-float">
             {current.image ? (
               <Image src={current.image} alt={`${current.name}, ${current.state}`} fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
             ) : (

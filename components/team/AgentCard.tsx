@@ -5,8 +5,8 @@ import { Agent } from "@/data/team";
 export function AgentCard({ agent }: { agent: Agent }) {
   const hasPhoto = Boolean(agent.image);
   return (
-    <Link href={`/team/${agent.slug}`} className="group block">
-      <div className="relative aspect-[3/4] overflow-hidden border border-line">
+    <Link href={`/team/${agent.slug}`} className="lift group block rounded-2xl">
+      <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-black/5 shadow-float">
         {hasPhoto ? (
           <Image
             src={agent.image}

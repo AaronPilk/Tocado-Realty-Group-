@@ -99,7 +99,7 @@ export function FeaturedProperties() {
 function FeaturedCard({ listing }: { listing: Listing }) {
   const hasPhoto = listing.images.length > 0;
   return (
-    <div className="flex flex-col border border-line bg-white shadow-[0_30px_70px_-55px_rgba(0,0,0,0.5)]">
+    <div className="lift flex flex-col overflow-hidden rounded-2xl border border-black/5 bg-white shadow-float">
       <Link href={`/listing/${listing.id}`} className="group relative block aspect-[4/3] overflow-hidden">
         {hasPhoto ? (
           <Image src={listing.images[0].url} alt={listing.address} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width:768px) 100vw, 33vw" />

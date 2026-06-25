@@ -15,7 +15,7 @@ const variants: Record<ButtonVariant, string> = {
 };
 
 const base =
-  "inline-flex items-center justify-center gap-2 px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.16em] transition-colors duration-300 cursor-pointer";
+  "inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-[12px] font-semibold uppercase tracking-[0.16em] transition-all duration-300 cursor-pointer hover:shadow-lg active:scale-[0.97]";
 
 type CommonProps = {
   variant?: ButtonVariant;

@@ -48,7 +48,7 @@ export default function BuyPage() {
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (
-            <div key={s.t} className="border border-line bg-white p-6">
+            <div key={s.t} className="rounded-2xl border border-black/5 shadow-float bg-white p-6">
               <div className="font-serif text-3xl text-orange">0{i + 1}</div>
               <h3 className="mt-3 font-serif text-xl">{s.t}</h3>
               <p className="mt-2 text-sm leading-6 text-muted">{s.d}</p>
@@ -71,7 +71,7 @@ export default function BuyPage() {
               ))}
             </div>
           </div>
-          <div className="border border-line bg-cream p-8">
+          <div className="rounded-2xl border border-black/5 shadow-float bg-cream p-8">
             <h2 className="font-serif text-2xl">Start your search</h2>
             <p className="mt-2 text-sm text-muted">Tell us what you&apos;re looking for and we&apos;ll take it from there.</p>
             <div className="mt-6">

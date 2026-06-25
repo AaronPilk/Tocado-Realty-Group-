@@ -35,12 +35,12 @@ export function JoinTeamForm() {
   }
 
   const input =
-    "w-full border border-line bg-white px-4 py-3 text-sm focus:border-orange focus:outline-none";
+    "w-full rounded-2xl border border-black/5 shadow-float bg-white px-4 py-3 text-sm focus:border-orange focus:outline-none";
   const label = "mb-1.5 block text-[11px] font-semibold uppercase tracking-[0.14em] text-black/60";
 
   if (status === "done") {
     return (
-      <div className="border border-line bg-white p-8 text-center">
+      <div className="rounded-2xl border border-black/5 shadow-float bg-white p-8 text-center">
         <p className="font-serif text-2xl">Application received.</p>
         <p className="mt-2 text-sm text-muted">
           We&apos;ll reach out to set up a confidential conversation.
@@ -89,7 +89,7 @@ export function JoinTeamForm() {
         <button
           type="submit"
           disabled={status === "sending"}
-          className="w-full bg-black px-7 py-4 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-orange disabled:opacity-60 sm:w-auto"
+          className="w-full rounded-full bg-black px-8 py-4 text-[12px] font-semibold uppercase tracking-[0.16em] text-white transition-all hover:bg-orange hover:shadow-lg disabled:opacity-60 sm:w-auto"
         >
           {status === "sending" ? "Sending..." : "Apply / Book a Call"}
         </button>

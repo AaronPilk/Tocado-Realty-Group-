@@ -70,8 +70,8 @@ export function MarketReport() {
               <button
                 key={key}
                 onClick={() => setActive(key)}
-                className={`rounded-sm px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.1em] transition ${
-                  active === key ? "bg-black text-white" : "border border-line text-black/60 hover:border-black/40"
+                className={`rounded-full px-4 py-2.5 text-[11px] font-semibold uppercase tracking-[0.1em] transition ${
+                  active === key ? "bg-black text-white" : "rounded-2xl border border-black/5 shadow-float text-black/60 hover:border-black/40"
                 }`}
               >
                 {metrics[key].label}
@@ -81,7 +81,7 @@ export function MarketReport() {
         </div>
 
         {/* Chart */}
-        <div className="mt-10 border border-line bg-cream/40 p-4 md:p-8">
+        <div className="mt-10 rounded-2xl border border-black/5 shadow-float bg-cream/40 p-4 md:p-8">
           <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={`${m.label} over the last 12 months`}>
             <defs>
               <linearGradient id="mr-fill" x1="0" y1="0" x2="0" y2="1">
@@ -104,7 +104,7 @@ export function MarketReport() {
         </div>
 
         {/* Stat row */}
-        <div className="mt-8 grid grid-cols-1 divide-y divide-line border border-line sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+        <div className="mt-8 grid grid-cols-1 divide-y divide-line rounded-2xl border border-black/5 shadow-float sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {[
             { v: "14", l: "Avg. Days on Market" },
             { v: "99.4%", l: "List-to-Sale Ratio" },
@@ -121,7 +121,7 @@ export function MarketReport() {
         </p>
 
         {/* CTA bar */}
-        <div className="mt-8 flex flex-col items-center justify-between gap-4 bg-ivory px-7 py-6 sm:flex-row">
+        <div className="mt-8 flex flex-col items-center justify-between gap-4 rounded-2xl bg-ivory px-7 py-6 shadow-float sm:flex-row">
           <div>
             <h3 className="font-serif text-xl">Want to know what your home is worth in today&apos;s market?</h3>
             <p className="mt-1 text-sm text-muted">Get a personalized valuation based on current Charlotte-market conditions.</p>

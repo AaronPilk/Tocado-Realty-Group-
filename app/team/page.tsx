@@ -33,7 +33,7 @@ export default function TeamPage() {
       <Section className="bg-white">
         <div className="grid gap-6 md:grid-cols-3">
           {values.map((v) => (
-            <div key={v.t} className="border border-line bg-cream p-7 text-center">
+            <div key={v.t} className="rounded-2xl border border-black/5 shadow-float bg-cream p-7 text-center">
               <h3 className="font-serif text-2xl">{v.t}</h3>
               <p className="mt-2 text-sm leading-6 text-muted">{v.d}</p>
             </div>

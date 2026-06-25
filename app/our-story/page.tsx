@@ -64,7 +64,7 @@ export default function OurStoryPage() {
             <Eyebrow className="block">What We Stand For</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl md:text-4xl">Our five core values</h2>
           </div>
-          <div className="mt-10 divide-y divide-line border border-line bg-white">
+          <div className="mt-10 divide-y divide-line rounded-2xl border border-black/5 shadow-float bg-white">
             {coreValues.map((v) => (
               <div key={v.n} className="flex items-start gap-6 p-7">
                 <span className="font-serif text-3xl text-orange">{v.n}</span>
@@ -84,7 +84,7 @@ export default function OurStoryPage() {
           <h2 className="mt-4 font-serif text-3xl">In a few words</h2>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             {traits.map((t) => (
-              <span key={t} className="border border-line px-5 py-2.5 text-[12px] font-semibold uppercase tracking-[0.14em]">
+              <span key={t} className="rounded-2xl border border-black/5 shadow-float px-5 py-2.5 text-[12px] font-semibold uppercase tracking-[0.14em]">
                 {t}
               </span>
             ))}

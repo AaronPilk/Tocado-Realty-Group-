@@ -20,7 +20,7 @@ export function TrustStrip() {
 
           <div className="flex flex-wrap justify-center gap-4">
             {reviewCards.map((c) => (
-              <div key={c.source} className="min-w-[150px] border border-line bg-white px-5 py-4 text-center">
+              <div key={c.source} className="min-w-[150px] rounded-2xl border border-black/5 shadow-float bg-white px-5 py-4 text-center">
                 <div className="text-orange">{c.rating}</div>
                 <div className="mt-1 text-[13px] font-semibold uppercase tracking-[0.1em]">{c.source}</div>
                 <div className="mt-1 text-[11px] text-muted">{c.note}</div>

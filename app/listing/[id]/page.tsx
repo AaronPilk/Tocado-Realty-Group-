@@ -81,7 +81,7 @@ export default async function ListingDetailPage({ params }: { params: { id: stri
           </div>
 
           {/* Inquiry */}
-          <aside className="h-fit border border-line bg-white p-6 lg:sticky lg:top-24">
+          <aside className="h-fit rounded-2xl border border-black/5 shadow-float bg-white p-6 lg:sticky lg:top-24">
             <h2 className="font-serif text-2xl">Request a showing</h2>
             <p className="mt-2 text-sm text-muted">
               Ask a question or schedule a private tour of this home.

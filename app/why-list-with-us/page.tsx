@@ -62,7 +62,7 @@ export default function WhyListPage() {
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
-            <div key={f.t} className="border border-line bg-white p-6">
+            <div key={f.t} className="rounded-2xl border border-black/5 shadow-float bg-white p-6">
               <h3 className="font-serif text-xl">{f.t}</h3>
               <p className="mt-2 text-sm leading-6 text-muted">{f.d}</p>
             </div>
@@ -77,7 +77,7 @@ export default function WhyListPage() {
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {plan.map((p) => (
-            <div key={p.day} className="border border-line bg-cream p-6">
+            <div key={p.day} className="rounded-2xl border border-black/5 shadow-float bg-cream p-6">
               <div className="text-[11px] font-semibold uppercase tracking-[0.16em] text-orange">{p.day}</div>
               <h3 className="mt-2 font-serif text-xl">{p.t}</h3>
               <p className="mt-2 text-sm leading-6 text-muted">{p.d}</p>
@@ -92,7 +92,7 @@ export default function WhyListPage() {
           <h2 className="mt-3 font-serif text-3xl text-white md:text-4xl">Let&apos;s get your home sold</h2>
           <p className="mt-3 text-sm text-white/70">Start with a free, no-obligation valuation.</p>
         </div>
-        <div className="mx-auto mt-8 max-w-2xl border border-white/15 p-8">
+        <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-white/15 p-8">
           <LeadForm
             leadType="home-valuation"
             fields={["firstName", "lastName", "email", "phone", "propertyAddress", "message"]}
