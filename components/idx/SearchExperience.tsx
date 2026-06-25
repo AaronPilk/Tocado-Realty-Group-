@@ -78,12 +78,12 @@ export function SearchExperience() {
   return (
     <div>
       {/* ── Search hero ───────────────────────────────────────── */}
-      <section className="relative flex min-h-[460px] items-center justify-center overflow-hidden bg-black md:min-h-[540px]">
+      <section className="relative flex min-h-[460px] items-center justify-center overflow-hidden bg-forest md:min-h-[540px]">
         {/* Swap for a real <Image fill priority /> interior photo */}
         <div className="photo-fill photo-dark" />
         <div className="relative z-10 w-full max-w-2xl px-6 text-center">
           <h1 className="font-serif text-4xl leading-tight text-white md:text-6xl">
-            Finding Your Dream Home <span className="italic text-orange">Starts Here</span>
+            Finding Your Dream Home <span className="italic text-mint glow-green">Starts Here</span>
           </h1>
           <p className="mt-4 text-sm text-white/80 md:text-base">
             Search with confidence knowing your local agent has the latest listings.

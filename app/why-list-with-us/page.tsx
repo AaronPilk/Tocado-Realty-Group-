@@ -44,7 +44,7 @@ export default function WhyListPage() {
         <Button href="/contact" variant="outlineLight">Speak With an Agent</Button>
       </PageHero>
 
-      <section className="bg-black py-16">
+      <section className="bg-forest py-16">
         <div className="mx-auto grid max-w-container grid-cols-2 gap-8 px-6 lg:grid-cols-4">
           {stats.map((s) => <Stat key={s.label} value={s.value} label={s.label} light />)}
         </div>
@@ -86,9 +86,9 @@ export default function WhyListPage() {
         </div>
       </Section>
 
-      <Section className="bg-charcoal">
+      <Section className="bg-forest2">
         <div className="mx-auto max-w-2xl text-center">
-          <Eyebrow className="glow-green block">Ready When You Are</Eyebrow>
+          <Eyebrow className="glow-green !text-mint block">Ready When You Are</Eyebrow>
           <h2 className="mt-3 font-serif text-3xl text-white md:text-4xl">Let&apos;s get your home sold</h2>
           <p className="mt-3 text-sm text-white/70">Start with a free, no-obligation valuation.</p>
         </div>

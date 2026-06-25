@@ -11,10 +11,10 @@ const steps = [
 
 export function ProcessTimeline() {
   return (
-    <section className="bg-charcoal py-20 md:py-28">
+    <section className="bg-forest2 py-20 md:py-28">
       <div className="mx-auto max-w-3xl px-6">
         <div className="text-center">
-          <Eyebrow className="block">Our Process</Eyebrow>
+          <Eyebrow className="!text-mint block">Our Process</Eyebrow>
           <h2 className="mt-4 font-serif text-3xl text-white md:text-4xl">How we work with you</h2>
         </div>
 

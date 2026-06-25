@@ -19,31 +19,29 @@ export function InstantValuation() {
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [error, setError] = useState("");
   const [result, setResult] = useState<Result | null>(null);
-  const [address, setAddress] = useState("");
-  const [beds, setBeds] = useState("");
-  const [baths, setBaths] = useState("");
-  const [sqft, setSqft] = useState("");
+
+  const [street, setStreet] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("NC");
+  const [zip, setZip] = useState("");
+
+  const fullAddress = `${street}, ${city}, ${state} ${zip}`.replace(/\s+/g, " ").trim();
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!address.trim()) {
-      setError("Please enter your property address.");
+    if (!street.trim() || !city.trim() || !state.trim() || !zip.trim()) {
+      setError("Please fill in the full address.");
       setStatus("error");
       return;
     }
     setStatus("loading");
     setError("");
 
-    const p = new URLSearchParams({ address });
-    if (beds) p.set("bedrooms", beds);
-    if (baths) p.set("bathrooms", baths);
-    if (sqft) p.set("squareFootage", sqft);
-
-    // Fire a soft lead so Stephenie sees the interest even if they don't fill the full form
-    submitLead({ leadType: "home-valuation", propertyAddress: address, message: "Used the instant home value tool." });
+    // Soft lead so Stephenie sees the interest even if they don't finish the full form
+    submitLead({ leadType: "home-valuation", propertyAddress: fullAddress, message: "Used the instant home value tool." });
 
     try {
-      const res = await fetch(`/api/valuation?${p.toString()}`);
+      const res = await fetch(`/api/valuation?address=${encodeURIComponent(fullAddress)}`);
       const data = await res.json();
       if (data.error || typeof data.price !== "number") {
         setError(data.error || "No estimate available for that address.");
@@ -91,19 +89,48 @@ export function InstantValuation() {
   return (
     <form onSubmit={onSubmit} className="rounded-2xl border border-black/5 bg-white p-6 shadow-float md:p-8">
       <div>
-        <label className={label}>Property Address</label>
+        <label className={label}>Street Address</label>
         <input
-          value={address}
-          onChange={(e) => setAddress(e.target.value)}
-          placeholder="123 Main St, Charlotte, NC 28203"
+          value={street}
+          onChange={(e) => setStreet(e.target.value)}
+          placeholder="1024 Spyglass Lane"
+          autoComplete="address-line1"
           className={input}
         />
       </div>
-      <p className="mt-3 text-[12px] text-muted">Optional — add details for a more accurate estimate:</p>
-      <div className="mt-2 grid grid-cols-3 gap-3">
-        <input value={beds} onChange={(e) => setBeds(e.target.value)} inputMode="numeric" placeholder="Beds" className={input} />
-        <input value={baths} onChange={(e) => setBaths(e.target.value)} inputMode="numeric" placeholder="Baths" className={input} />
-        <input value={sqft} onChange={(e) => setSqft(e.target.value)} inputMode="numeric" placeholder="Sq Ft" className={input} />
+
+      <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-[1fr_auto_auto]">
+        <div>
+          <label className={label}>City</label>
+          <input
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            placeholder="Waxhaw"
+            autoComplete="address-level2"
+            className={input}
+          />
+        </div>
+        <div className="sm:w-24">
+          <label className={label}>State</label>
+          <input
+            value={state}
+            onChange={(e) => setState(e.target.value)}
+            placeholder="NC"
+            autoComplete="address-level1"
+            className={input}
+          />
+        </div>
+        <div className="sm:w-32">
+          <label className={label}>ZIP</label>
+          <input
+            value={zip}
+            onChange={(e) => setZip(e.target.value)}
+            placeholder="28173"
+            inputMode="numeric"
+            autoComplete="postal-code"
+            className={input}
+          />
+        </div>
       </div>
 
       {status === "error" && <p className="mt-4 text-sm text-orange">{error}</p>}

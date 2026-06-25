@@ -3,7 +3,7 @@ import { siteConfig } from "@/data/site";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[calc(100vh-120px)] items-center justify-center overflow-hidden bg-black">
+    <section className="relative flex min-h-[calc(100vh-120px)] items-center justify-center overflow-hidden bg-forest">
       {/* Hero background video (muted/looping). Poster shows while it loads or
           if autoplay is blocked. Swap files in /public/videos + /public/images. */}
       <video

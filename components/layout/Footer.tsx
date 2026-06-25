@@ -14,7 +14,7 @@ const legalLinks = [
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-forest text-white">
       <div className="mx-auto max-w-container px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
@@ -29,7 +29,7 @@ export function Footer() {
             <p className="mt-5 text-sm leading-6 text-white/60">
               {siteConfig.heroBody}
             </p>
-            <p className="mt-4 text-[12px] uppercase tracking-[0.14em] text-orange">
+            <p className="mt-4 text-[12px] uppercase tracking-[0.14em] text-mint">
               ★★★★★ Trusted across the Carolinas
             </p>
           </div>
@@ -42,7 +42,7 @@ export function Footer() {
             <ul className="mt-5 space-y-3">
               {footerServices.map((s) => (
                 <li key={s.href}>
-                  <Link href={s.href} className="text-sm text-white/70 hover:text-orange">
+                  <Link href={s.href} className="text-sm text-white/70 hover:text-mint">
                     {s.label}
                   </Link>
                 </li>
@@ -58,7 +58,7 @@ export function Footer() {
             <ul className="mt-5 space-y-3">
               {locations.map((l) => (
                 <li key={l.slug}>
-                  <Link href={`/locations/${l.slug}`} className="text-sm text-white/70 hover:text-orange">
+                  <Link href={`/locations/${l.slug}`} className="text-sm text-white/70 hover:text-mint">
                     {l.name}, {l.state}
                   </Link>
                 </li>
@@ -78,8 +78,8 @@ export function Footer() {
               <NewsletterForm />
             </div>
             <div className="mt-6 space-y-1 text-sm text-white/60">
-              <a href={siteConfig.phoneHref} className="block hover:text-orange">{siteConfig.phone}</a>
-              <a href={`mailto:${siteConfig.email}`} className="block hover:text-orange">{siteConfig.email}</a>
+              <a href={siteConfig.phoneHref} className="block hover:text-mint">{siteConfig.phone}</a>
+              <a href={`mailto:${siteConfig.email}`} className="block hover:text-mint">{siteConfig.email}</a>
               <p>{siteConfig.address}</p>
             </div>
           </div>

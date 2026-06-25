@@ -24,11 +24,11 @@ export function FounderStory() {
           </div>
 
           {/* Copy */}
-          <div className="bg-black p-9 text-white md:p-12">
-            <Eyebrow>The Person Behind The Team</Eyebrow>
+          <div className="bg-forest p-9 text-white md:p-12">
+            <Eyebrow className="!text-mint">The Person Behind The Team</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl leading-tight md:text-4xl">
               Real estate built on{" "}
-              <span className="glow-green italic text-orange">relationships, not transactions.</span>
+              <span className="glow-green italic text-mint">relationships, not transactions.</span>
             </h2>
             <p className="mt-5 text-sm leading-7 text-white/70">
               Stephenie Tocado has spent more than twenty years inside the
@@ -46,20 +46,20 @@ export function FounderStory() {
 
             <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
               <div>
-                <div className="font-serif text-2xl text-orange">20+</div>
+                <div className="font-serif text-2xl text-mint">20+</div>
                 <div className="text-[10px] uppercase tracking-[0.14em] text-white/50">Years Experience</div>
               </div>
               <div>
-                <div className="font-serif text-2xl text-orange">2</div>
+                <div className="font-serif text-2xl text-mint">2</div>
                 <div className="text-[10px] uppercase tracking-[0.14em] text-white/50">States Licensed</div>
               </div>
               <div>
-                <div className="font-serif text-2xl text-orange">100%</div>
+                <div className="font-serif text-2xl text-mint">100%</div>
                 <div className="text-[10px] uppercase tracking-[0.14em] text-white/50">Client-First</div>
               </div>
             </div>
 
-            <a href="/our-story" className="mt-8 inline-block text-[12px] font-semibold uppercase tracking-[0.16em] text-orange hover:text-white">
+            <a href="/our-story" className="mt-8 inline-block text-[12px] font-semibold uppercase tracking-[0.16em] text-mint hover:text-white">
               Our Story →
             </a>
           </div>

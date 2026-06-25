@@ -7,12 +7,15 @@
      NOTE: the accent var is still named --color-orange so the
      existing `text-orange` / `bg-orange` classes keep working —
      its VALUE is now the brand sage green. */
-  --color-black: #21302a;     /* lighter deep forest (dark sections, headings) */
-  --color-charcoal: #2a3a32;  /* lighter forest (charcoal sections) */
+  --color-black: #18221d;     /* near-black forest — TEXT, headings, buttons */
+  --color-charcoal: #2a3a32;
   --color-ivory: #eef0e8;     /* soft sage-cream */
   --color-cream: #f6f4ef;     /* warm cream */
   --color-white: #ffffff;
-  --color-orange: #3c7a67;    /* BRAND ACCENT — sage green */
+  --color-orange: #3c7a67;    /* BRAND ACCENT — sage green (text on LIGHT) */
+  --color-forest: #244b40;    /* deep brand green — dark SECTION backgrounds */
+  --color-forest-2: #2c5a4d;  /* lighter forest — charcoal-equivalent sections */
+  --color-mint: #aedccb;      /* light accent — text/accents on GREEN sections */
   --color-muted: #7c7c75;     /* warm gray */
   --color-border: #d9d4ca;    /* warm border */
 }
@@ -48,8 +51,8 @@ h1, h2, h3, h4 {
 }
 .photo-dark {
   background:
-    linear-gradient(120deg, rgba(33, 48, 42, 0.9) 0%, rgba(42, 58, 50, 0.78) 55%, rgba(36, 52, 44, 0.7) 100%),
-    radial-gradient(120% 90% at 80% 10%, rgba(60, 122, 103, 0.2) 0%, transparent 55%);
+    linear-gradient(120deg, rgba(30, 62, 53, 0.9) 0%, rgba(40, 80, 69, 0.8) 55%, rgba(28, 56, 48, 0.74) 100%),
+    radial-gradient(120% 90% at 80% 10%, rgba(120, 200, 160, 0.18) 0%, transparent 55%);
 }
 .photo-warm {
   background:
@@ -58,7 +61,7 @@ h1, h2, h3, h4 {
 }
 .photo-charcoal {
   background:
-    linear-gradient(135deg, #24332c 0%, #2a3a32 60%, #30493c 100%);
+    linear-gradient(135deg, #234a40 0%, #2c5a4d 60%, #356b5c 100%);
 }
 
 /* Sales ticker marquee */
