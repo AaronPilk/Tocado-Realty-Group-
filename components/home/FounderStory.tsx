@@ -28,7 +28,7 @@ export function FounderStory() {
             <Eyebrow>The Person Behind The Team</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl leading-tight md:text-4xl">
               Real estate built on{" "}
-              <span className="italic text-orange">relationships, not transactions.</span>
+              <span className="glow-green italic text-orange">relationships, not transactions.</span>
             </h2>
             <p className="mt-5 text-sm leading-7 text-white/70">
               Stephenie Tocado has spent more than twenty years inside the

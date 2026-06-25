@@ -27,10 +27,10 @@ export function PageHero({ eyebrow, title, accent, body, treatment = "dark", ima
       )}
       {!isLight && !image && <div className={`photo-fill ${bgClass}`} />}
       <div className="relative z-10 mx-auto max-w-3xl px-6 py-24 text-center md:py-32">
-        {eyebrow && <Eyebrow className="block">{eyebrow}</Eyebrow>}
+        {eyebrow && <Eyebrow className={`block ${isLight ? "" : "glow-green"}`}>{eyebrow}</Eyebrow>}
         <h1 className={`mt-4 font-serif text-4xl leading-tight md:text-6xl ${isLight ? "text-black" : "text-white"}`}>
           {title}
-          {accent && <span className="block italic text-orange">{accent}</span>}
+          {accent && <span className={`block italic text-orange ${isLight ? "" : "glow-green"}`}>{accent}</span>}
         </h1>
         {body && (
           <p className={`mx-auto mt-6 max-w-2xl text-sm leading-7 md:text-base ${isLight ? "text-muted" : "text-white/75"}`}>

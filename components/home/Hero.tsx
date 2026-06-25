@@ -31,7 +31,7 @@ export function Hero() {
 
         <h1 className="hero-text-shadow font-serif text-5xl leading-[1.02] text-white md:text-7xl lg:text-8xl">
           {siteConfig.heroHeadlineMain}
-          <span className="block italic text-[#9ed3c1]">{siteConfig.heroHeadlineAccent}</span>
+          <span className="glow-green block italic text-[#9ed3c1]">{siteConfig.heroHeadlineAccent}</span>
         </h1>
 
         <p className="hero-text-shadow mx-auto mt-8 max-w-2xl rounded-2xl bg-black/40 px-8 py-5 text-sm leading-7 text-white/95 backdrop-blur-sm md:text-base">

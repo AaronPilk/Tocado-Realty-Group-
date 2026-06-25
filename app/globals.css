@@ -93,6 +93,11 @@ h1, h2, h3, h4 {
   transform: translateY(-7px);
   box-shadow: 0 32px 64px -28px rgba(15, 15, 15, 0.34);
 }
+/* Neon-green glow for sage accents on dark backgrounds */
+.glow-green {
+  text-shadow: 0 0 14px rgba(90, 200, 150, 0.55), 0 0 32px rgba(90, 200, 150, 0.3);
+}
+
 /* Hero text legibility over video */
 .hero-text-shadow {
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.6), 0 1px 4px rgba(0, 0, 0, 0.65);

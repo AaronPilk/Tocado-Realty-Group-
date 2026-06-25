@@ -88,7 +88,7 @@ export default function WhyListPage() {
 
       <Section className="bg-charcoal">
         <div className="mx-auto max-w-2xl text-center">
-          <Eyebrow className="block">Ready When You Are</Eyebrow>
+          <Eyebrow className="glow-green block">Ready When You Are</Eyebrow>
           <h2 className="mt-3 font-serif text-3xl text-white md:text-4xl">Let&apos;s get your home sold</h2>
           <p className="mt-3 text-sm text-white/70">Start with a free, no-obligation valuation.</p>
         </div>

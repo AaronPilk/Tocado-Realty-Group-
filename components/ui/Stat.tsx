@@ -9,7 +9,7 @@ export function Stat({
 }) {
   return (
     <div className="text-center">
-      <div className="font-serif text-4xl text-orange md:text-5xl lg:text-6xl">
+      <div className={`font-serif text-4xl text-orange md:text-5xl lg:text-6xl ${light ? "glow-green" : ""}`}>
         {value}
       </div>
       <div
