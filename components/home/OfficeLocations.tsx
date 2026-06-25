@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { locations } from "@/data/locations";
 
@@ -54,7 +55,11 @@ export function OfficeLocations() {
 
           {/* Image card */}
           <div className="relative min-h-[420px] overflow-hidden border border-line">
-            <div className={`photo-fill ${treatmentClass[current.treatment]}`} />
+            {current.image ? (
+              <Image src={current.image} alt={`${current.name}, ${current.state}`} fill className="object-cover" sizes="(max-width:1024px) 100vw, 50vw" />
+            ) : (
+              <div className={`photo-fill ${treatmentClass[current.treatment]}`} />
+            )}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/75 to-transparent p-7">
               <h3 className="font-serif text-3xl text-white">{current.name}, {current.state}</h3>
               <p className="mt-1 text-sm text-white/70">{current.serviceArea}</p>

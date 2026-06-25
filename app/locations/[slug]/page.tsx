@@ -44,6 +44,7 @@ export default function LocationDetailPage({ params }: { params: { slug: string 
         title={`${loc.name}, ${loc.state}`}
         accent="real estate."
         body={loc.blurb}
+        image={loc.image}
         treatment={loc.treatment === "warm" ? "warm" : loc.treatment === "charcoal" ? "charcoal" : "dark"}
       >
         <Button href="/search" variant="orange">Search {loc.name} Homes</Button>

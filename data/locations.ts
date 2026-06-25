@@ -7,6 +7,9 @@ export type Location = {
   blurb: string;
   description: string;
   treatment: "warm" | "dark" | "charcoal";
+  /** Optional. Drop a photo at /public/images/locations/<slug>.jpg and set this
+   *  to "/images/locations/<slug>.jpg" — it replaces the gradient automatically. */
+  image?: string;
 };
 
 // North Carolina market pages — strong for local SEO ("<city> NC homes for sale").
@@ -23,6 +26,7 @@ export const locations: Location[] = [
     description:
       "Charlotte is the anchor of our market. From historic Dilworth and Myers Park to fast-growing South End and Ballantyne, we help buyers and sellers move with strategy in one of the Southeast's strongest housing markets.",
     treatment: "dark",
+    image: "/images/locations/charlotte.jpg",
   },
   {
     slug: "lake-norman",
@@ -34,6 +38,7 @@ export const locations: Location[] = [
     description:
       "The Lake Norman towns offer waterfront estates, golf communities, and easy access to Charlotte. We specialize in pricing and marketing lake-area homes where presentation and timing drive premium results.",
     treatment: "warm",
+    image: "/images/locations/lake-norman.jpg",
   },
   {
     slug: "raleigh",
@@ -45,6 +50,7 @@ export const locations: Location[] = [
     description:
       "Raleigh's mix of government, universities, and tech keeps demand high year-round. We guide relocating buyers and local sellers through a market that rewards preparation and sharp negotiation.",
     treatment: "charcoal",
+    image: "/images/locations/raleigh.jpg",
   },
   {
     slug: "durham",
@@ -56,6 +62,7 @@ export const locations: Location[] = [
     description:
       "Durham blends historic charm with new development around Duke and the Research Triangle. It's a market with real upside for buyers who move decisively and sellers who present well.",
     treatment: "warm",
+    image: "/images/locations/durham.jpg",
   },
   {
     slug: "greensboro",
@@ -67,6 +74,7 @@ export const locations: Location[] = [
     description:
       "Greensboro offers strong value and space for the money, with a central location connecting the Triad. We help first-time buyers and move-up families find the right fit at the right price.",
     treatment: "charcoal",
+    image: "/images/locations/greensboro.jpg",
   },
   {
     slug: "asheville",
@@ -78,5 +86,6 @@ export const locations: Location[] = [
     description:
       "Asheville's mountain setting and lifestyle keep it competitive, with limited inventory and strong second-home demand. We position listings to stand out and help buyers win in tight conditions.",
     treatment: "warm",
+    image: "/images/locations/asheville.jpg",
   },
 ];

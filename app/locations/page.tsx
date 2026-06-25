@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { PageHero } from "@/components/ui/PageHero";
 import { Section } from "@/components/ui/Section";
 import { locations } from "@/data/locations";
@@ -33,8 +34,13 @@ export default function LocationsPage() {
               href={`/locations/${loc.slug}`}
               className="group block overflow-hidden border border-line bg-white"
             >
-              <div className="relative aspect-[4/3]">
-                <div className={`photo-fill ${treatmentClass[loc.treatment]}`} />
+              <div className="relative aspect-[4/3] overflow-hidden">
+                {loc.image ? (
+                  <Image src={loc.image} alt={`${loc.name}, ${loc.state}`} fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width:768px) 100vw, 33vw" />
+                ) : (
+                  <div className={`photo-fill ${treatmentClass[loc.treatment]}`} />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <h2 className="absolute bottom-4 left-5 font-serif text-3xl text-white">{loc.name}</h2>
               </div>
               <div className="p-6">
