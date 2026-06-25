@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { navLinks } from "@/data/nav";
 import { siteConfig } from "@/data/site";
@@ -25,13 +26,15 @@ export function Header() {
     >
       <div className="mx-auto flex h-[78px] max-w-[1340px] items-center justify-between gap-6 px-6">
         {/* Logo */}
-        <Link href="/" className="flex shrink-0 items-center gap-2.5">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-black text-[11px] font-semibold tracking-[0.08em]">
-            {siteConfig.logoMark}
-          </span>
-          <span className="whitespace-nowrap font-serif text-lg leading-none xl:text-xl">
-            {siteConfig.name}
-          </span>
+        <Link href="/" className="flex shrink-0 items-center" aria-label={siteConfig.name}>
+          <Image
+            src="/images/logo.png"
+            alt={siteConfig.name}
+            width={354}
+            height={150}
+            priority
+            className="h-11 w-auto md:h-12"
+          />
         </Link>
 
         {/* Desktop nav */}

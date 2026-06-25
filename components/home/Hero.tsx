@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 import { siteConfig } from "@/data/site";
@@ -24,11 +25,14 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/45 to-black/80" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        <div className="mx-auto mb-9 flex h-24 w-24 items-center justify-center rounded-full border border-white/60 text-white">
-          <span className="text-[12px] font-semibold uppercase tracking-[0.16em]">
-            {siteConfig.logoMark}
-          </span>
-        </div>
+        <Image
+          src="/images/logo-light.png"
+          alt={siteConfig.name}
+          width={354}
+          height={150}
+          priority
+          className="mx-auto mb-9 h-20 w-auto md:h-24"
+        />
 
         <div className="mx-auto mb-8 inline-flex rounded-full border border-white/25 bg-black/35 px-6 py-3 backdrop-blur-sm">
           <Eyebrow>{siteConfig.heroEyebrow}</Eyebrow>

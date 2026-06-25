@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/data/site";
 import { footerServices } from "@/data/nav";
 import { locations } from "@/data/locations";
@@ -18,12 +19,13 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/60 text-[12px] font-semibold tracking-[0.1em]">
-                {siteConfig.logoMark}
-              </span>
-              <span className="font-serif text-xl">{siteConfig.name}</span>
-            </div>
+            <Image
+              src="/images/logo-light.png"
+              alt={siteConfig.name}
+              width={354}
+              height={150}
+              className="h-12 w-auto"
+            />
             <p className="mt-5 text-sm leading-6 text-white/60">
               {siteConfig.heroBody}
             </p>
