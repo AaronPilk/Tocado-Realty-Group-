@@ -96,6 +96,20 @@ h1, h2, h3, h4 {
   transform: translateY(-7px);
   box-shadow: 0 32px 64px -28px rgba(15, 15, 15, 0.34);
 }
+/* Scroll-reveal: fade + slide up when an element enters the viewport */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
 /* Neon-green glow for sage accents on dark backgrounds */
 .glow-green {
   text-shadow: 0 0 9px rgba(90, 200, 150, 0.28), 0 0 20px rgba(90, 200, 150, 0.14);

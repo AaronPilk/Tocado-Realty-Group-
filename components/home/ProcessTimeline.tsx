@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useRef } from "react";
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const steps = [
@@ -10,10 +13,30 @@ const steps = [
 ];
 
 export function ProcessTimeline() {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const els = ref.current?.querySelectorAll(".reveal");
+    if (!els) return;
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.2, rootMargin: "0px 0px -10% 0px" }
+    );
+    els.forEach((el) => obs.observe(el));
+    return () => obs.disconnect();
+  }, []);
+
   return (
     <section className="bg-forest2 py-20 md:py-28">
-      <div className="mx-auto max-w-3xl px-6">
-        <div className="text-center">
+      <div ref={ref} className="mx-auto max-w-3xl px-6">
+        <div className="reveal text-center">
           <Eyebrow className="!text-mint block">How It Works</Eyebrow>
           <h2 className="mt-4 font-serif text-3xl text-white md:text-4xl">From first call to closing day</h2>
         </div>
@@ -24,9 +47,10 @@ export function ProcessTimeline() {
             {steps.map((s, i) => (
               <div
                 key={s.n}
-                className={`relative flex flex-col gap-4 md:flex-row md:items-center ${
+                className={`reveal relative flex flex-col gap-4 md:flex-row md:items-center ${
                   i % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
+                style={{ transitionDelay: `${(i % 2) * 80}ms` }}
               >
                 <div className="md:w-1/2" />
                 <div className="absolute left-5 z-10 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-orange text-[12px] font-semibold text-white md:left-1/2">
