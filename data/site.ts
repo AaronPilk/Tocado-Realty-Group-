@@ -17,9 +17,9 @@ export const siteConfig = {
   marketLabel: "Serving North Carolina",
 
   // ── Contact ─────────────────────────────────────────────────
-  phone: "(704) 661-3414",
-  phoneHref: "tel:+17046613414",
-  email: "S.tocado@rtocado.com",
+  phone: "(704) 839-5599",
+  phoneHref: "tel:+17048395599",
+  email: "richardtocado@gmail.com",
   address: "Charlotte, North Carolina", // [[add full office street address when ready]]
 
   // ── Lead delivery (Formspree → emails Richard) ────────────
