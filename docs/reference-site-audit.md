@@ -2,7 +2,7 @@
 
 We recreated the **layout, structure, spacing, and luxury feel** as an original site.
 No copy, images, logos, listing data, or code were taken from the reference. All content
-is original and specific to Stephenie Tocado's NC firm.
+is original and specific to Richard Tocado's NC firm.
 
 ## Sitemap (recreated, original)
 
@@ -54,7 +54,7 @@ phone + Contact button right. Collapses to a full-screen black hamburger menu on
 2. Trust/review strip (Zillow / Google / Realtor.com cards).
 3. Black sales ticker (recent closings, auto-scroll).
 4. Black stat band (4 stats).
-5. Founder split block — **real Stephenie bio** + portrait + mini-stats.
+5. Founder split block — **real Richard bio** + portrait + mini-stats.
 6. Buyer/Seller service cards.
 7. Charcoal process timeline (6 steps, alternating).
 8. Office/markets accordion + image card.

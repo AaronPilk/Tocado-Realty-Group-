@@ -22,7 +22,7 @@ lib/
   utils.ts
 data/                    site (central config), nav, stats, ticker, team, locations, mock-listings
 docs/                    this folder
-public/images/           stephenie.png (real) + folders for team/locations photos
+public/images/           richard.png (real) + folders for team/locations photos
 ```
 
 ## Key design decisions
@@ -36,7 +36,7 @@ public/images/           stephenie.png (real) + folders for team/locations photo
 - **SEO built in** — per-page metadata, sitemap, robots, JSON-LD (RealEstateAgent, Breadcrumb, FAQ).
 
 ## What's real vs. placeholder
-- **Real:** Stephenie's bio/story (20+ yrs, since 2002, NC+SC licensed), her portrait, Canopy MLS IDX, Charlotte-metro market focus.
+- **Real:** Richard's bio/story (20+ yrs, since 2002, NC+SC licensed), her portrait, Canopy MLS IDX, Charlotte-metro market focus.
 - **Placeholder (`[[ ]]`):** firm name, brokerage, phone, email, address, license #s, stats, ticker entries, extra agents, social links.
 
 ## Build status

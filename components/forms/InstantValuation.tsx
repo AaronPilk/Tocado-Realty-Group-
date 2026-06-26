@@ -37,7 +37,7 @@ export function InstantValuation() {
     setStatus("loading");
     setError("");
 
-    // Soft lead so Stephenie sees the interest even if they don't finish the full form
+    // Soft lead so Richard sees the interest even if they don't finish the full form
     submitLead({ leadType: "home-valuation", propertyAddress: fullAddress, message: "Used the instant home value tool." });
 
     try {

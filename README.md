@@ -1,7 +1,7 @@
 # Tocado Real Estate — North Carolina
 
 Premium real estate website built with Next.js (App Router) + TypeScript + Tailwind.
-Live MLS search via Canopy MLS Matrix IDX. Relationship-first brand for Stephenie Tocado's NC firm.
+Live MLS search via Canopy MLS Matrix IDX. Relationship-first brand for Richard Tocado's NC firm.
 
 ## Run it locally
 

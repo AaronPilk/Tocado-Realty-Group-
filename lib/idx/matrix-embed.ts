@@ -8,7 +8,7 @@
  * Determine which it is before pasting (see docs/idx-setup.md). Never put API
  * keys here — those go server-side via the mls-grid / bridge-api providers.
  */
-// Canopy MLS Matrix IDX — confirmed integration provided by Stephenie.
+// Canopy MLS Matrix IDX — confirmed integration provided by Richard.
 // Used as the default if the env var isn't set, so live search works out of the box.
 const CANOPY_MATRIX_IDX =
   "https://matrix.canopymls.com/Matrix/public/IDX.aspx?idx=90ff36dd";
