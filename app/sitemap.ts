@@ -1,6 +1,5 @@
 import type { MetadataRoute } from "next";
 import { locations } from "@/data/locations";
-import { team } from "@/data/team";
 import { neighborhoods } from "@/data/neighborhoods";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.yourfirm.com";
@@ -14,9 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sell",
     "/home-valuation",
     "/mortgage-calculator",
-    "/team",
     "/why-list-with-us",
-    "/join-the-team",
     "/our-story",
     "/locations",
     "/neighborhoods",
@@ -35,13 +32,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const teamRoutes = team.map((a) => ({
-    url: `${baseUrl}/team/${a.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-  }));
-
   const neighborhoodRoutes = neighborhoods.map((n) => ({
     url: `${baseUrl}/neighborhoods/${n.slug}`,
     lastModified: new Date(),
@@ -49,5 +39,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...locationRoutes, ...teamRoutes, ...neighborhoodRoutes];
+  return [...staticRoutes, ...locationRoutes, ...neighborhoodRoutes];
 }
