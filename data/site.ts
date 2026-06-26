@@ -13,7 +13,7 @@ export const siteConfig = {
   shortName: "Tocado",
   logoMark: "TRG", // crest text until a real logo is supplied
   brokerage: "Tocado Realty Group", // her own NC brokerage firm
-  tagline: "Real Estate, Done With Intention.",
+  tagline: "Guiding Your Carolina Move.",
   marketLabel: "Serving North Carolina",
 
   // ── Contact ─────────────────────────────────────────────────
@@ -31,11 +31,11 @@ export const siteConfig = {
 
   // ── Top bar / hero copy ─────────────────────────────────────
   topBar: "Tocado Realty Group · Serving North Carolina",
-  heroEyebrow: "North Carolina Real Estate, Built With Intention",
-  heroHeadlineMain: "Real Estate,",
-  heroHeadlineAccent: "Done With Intention.",
+  heroEyebrow: "Relationship-First Real Estate Across North Carolina",
+  heroHeadlineMain: "Carolina Real Estate,",
+  heroHeadlineAccent: "Made Personal.",
   heroBody:
-    "A relationship-first team guiding buyers, sellers, and families across North Carolina with clarity, strategy, and long-term care.",
+    "From the first showing to closing day, we help buyers, sellers, and families move across North Carolina with honest guidance, sharp strategy, and care that doesn't end at the keys.",
 
   // ── Social ──────────────────────────────────────────────────
   // Leave blank to hide the icon until the account exists. Paste a URL to show it.

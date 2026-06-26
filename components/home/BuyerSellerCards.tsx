@@ -3,17 +3,17 @@ import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const cards = [
   {
-    title: "Guided Buying",
+    title: "For Buyers",
     treatment: "photo-warm",
-    body: "From first search to final walkthrough, we help you move with confidence — strategy, off-market access, and sharp negotiation on your side.",
-    cta: "Explore Properties",
+    body: "We turn the search into a plan — early access to the right homes, straight answers, and tough negotiation so you buy smart and close clean.",
+    cta: "Start Your Search",
     href: "/buy",
   },
   {
-    title: "Strategic Selling",
+    title: "For Sellers",
     treatment: "photo-dark",
-    body: "Pricing, presentation, and exposure built to sell for more, in less time. Your listing reaches the right buyers from day one.",
-    cta: "Get Your Home Valued",
+    body: "Sharp pricing, standout marketing, and broad exposure that put your home in front of serious buyers — and sell it for what it's worth.",
+    cta: "See What It's Worth",
     href: "/home-valuation",
   },
 ];
@@ -23,13 +23,13 @@ export function BuyerSellerCards() {
     <section className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-container px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <Eyebrow className="block">How We Guide You</Eyebrow>
+          <Eyebrow className="block">How We Help</Eyebrow>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">
-            A thoughtful approach to every move
+            Buying or selling, handled with care
           </h2>
           <p className="mt-4 text-sm leading-7 text-muted">
-            Whether you&apos;re buying your first home or selling a long-time one,
-            you get a clear plan and a team that sweats the details.
+            First-time buyer or longtime homeowner — you get a clear game plan
+            and a team that handles the details so you don&apos;t have to.
           </p>
           <div className="mx-auto mt-6 h-[2px] w-12 bg-orange" />
         </div>

@@ -14,10 +14,10 @@ export const metadata = buildMetadata({
 });
 
 const steps = [
-  { t: "Get Pre-Approved", d: "We connect you with trusted lenders so you shop with real buying power." },
-  { t: "Define Your Search", d: "We turn your must-haves into a focused plan across the right NC markets." },
-  { t: "Tour & Compare", d: "Curated showings and honest guidance — no pressure, just clarity." },
-  { t: "Offer & Negotiate", d: "We protect your terms and your money through to a clean close." },
+  { t: "Know Your Budget", d: "We connect you with trusted lenders so you shop with real buying power from day one." },
+  { t: "Zero In", d: "We turn your must-haves into a focused search across the right Carolina neighborhoods." },
+  { t: "Tour With Us", d: "Hand-picked showings and straight talk — no pressure, just honest perspective." },
+  { t: "Win the Deal", d: "We negotiate hard on price and terms, then guide you cleanly to the closing table." },
 ];
 
 const faqs = [
@@ -44,7 +44,7 @@ export default function BuyPage() {
       <Section className="bg-cream">
         <div className="max-w-2xl">
           <Eyebrow>How Buying Works</Eyebrow>
-          <h2 className="mt-3 font-serif text-3xl md:text-4xl">A calmer path to the right home</h2>
+          <h2 className="mt-3 font-serif text-3xl md:text-4xl">Four steps to the right home</h2>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((s, i) => (

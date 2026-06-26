@@ -6,15 +6,15 @@ import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildMetadata({
   title: "Join The Team",
-  description: "Grow your real estate career in North Carolina with coaching, marketing, and lead flow — without sacrificing your life.",
+  description: "Build your real estate career in North Carolina with real mentorship, marketing, and lead flow — and the support to actually grow.",
   path: "/join-the-team",
 });
 
 const support = [
-  { t: "Instructional Coaching", d: "Hands-on mentorship from someone who's closed deals for two decades." },
-  { t: "Elevated Marketing", d: "Done-for-you listing media, social content, and brand support." },
-  { t: "Operational Leverage", d: "Systems and admin support so you can focus on clients, not paperwork." },
-  { t: "Consistent Lead Flow", d: "Real opportunities to grow your pipeline from day one." },
+  { t: "Real Mentorship", d: "Hands-on guidance from someone who's been closing deals for two decades." },
+  { t: "Done-For-You Marketing", d: "Listing media, social content, and brand support handled for you." },
+  { t: "Systems & Admin", d: "The back-office support to keep you focused on clients, not paperwork." },
+  { t: "Steady Lead Flow", d: "Real opportunities to grow your pipeline from your very first week." },
 ];
 
 const paths = [
@@ -27,15 +27,15 @@ export default function JoinTeamPage() {
     <>
       <PageHero
         eyebrow="Careers"
-        title="Grow your career."
-        accent="Without sacrificing your life."
-        body="A team built to give agents real support — coaching, marketing, and leverage — so you can do the best work of your career."
+        title="Build a career"
+        accent="you're proud of."
+        body="A team built to give agents what they actually need — mentorship, marketing, and real support — so you can do the best work of your career."
         treatment="charcoal"
       />
 
       <Section className="bg-cream">
         <div className="max-w-2xl">
-          <Eyebrow>Why Agents Choose Us</Eyebrow>
+          <Eyebrow>Why Agents Join Us</Eyebrow>
           <h2 className="mt-3 font-serif text-3xl md:text-4xl">Support that actually moves the needle</h2>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">

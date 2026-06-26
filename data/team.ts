@@ -23,7 +23,7 @@ export const team: Agent[] = [
     treatment: "warm",
     email: "S.tocado@rtocado.com",
     phone: "(704) 661-3414",
-    bio: "With more than two decades in real estate and mortgage since 2002, Richard founded Tocado Realty Group on a simple standard: relationships over transactions. As a licensed North Carolina broker (and licensed in South Carolina), he brings deep knowledge of the full transaction — from first conversation to closing table — and an obsession with the details that protect his clients.",
+    bio: "With more than two decades in real estate and mortgage since 2002, Richard founded Tocado Realty Group on a simple standard: people come before paperwork. As a licensed North Carolina broker (and licensed in South Carolina), he knows every step of a deal — from the first conversation to the closing table — and sweats the details that protect his clients.",
   },
 ];
 

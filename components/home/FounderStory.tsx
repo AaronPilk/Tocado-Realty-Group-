@@ -25,23 +25,23 @@ export function FounderStory() {
 
           {/* Copy */}
           <div className="bg-forest p-9 text-white md:p-12">
-            <Eyebrow className="!text-mint">The Person Behind The Team</Eyebrow>
+            <Eyebrow className="!text-mint">Meet The Founder</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl leading-tight md:text-4xl">
-              Real estate built on{" "}
-              <span className="glow-green italic text-mint">relationships, not transactions.</span>
+              Built on trust,{" "}
+              <span className="glow-green italic text-mint">not just transactions.</span>
             </h2>
             <p className="mt-5 text-sm leading-7 text-white/70">
-              Richard Tocado has spent more than twenty years inside the
-              transaction — real estate, title, and mortgage since 2002. That
-              full-picture experience means he sees what most agents miss: the
-              details that protect your money, your timeline, and your peace of
-              mind.
+              Richard Tocado has worked every side of the deal for more than two
+              decades — real estate, title, and mortgage since 2002. That
+              full-picture background lets him catch what other agents miss: the
+              small details that protect your money, your timeline, and your
+              peace of mind.
             </p>
             <p className="mt-4 text-sm leading-7 text-white/70">
-              Licensed in North Carolina and South Carolina, he built this team
-              to give buyers and sellers a calmer, sharper way to move — proactive
-              communication, real strategy, and a standard of care that doesn&apos;t
-              end at the closing table.
+              Licensed in North Carolina and South Carolina, he started this team
+              to give buyers and sellers a calmer, smarter way to move — clear
+              communication, a real plan, and a level of care that keeps going
+              long after closing day.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/10 pt-6">

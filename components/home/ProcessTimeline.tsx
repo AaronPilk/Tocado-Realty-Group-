@@ -1,12 +1,12 @@
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const steps = [
-  { n: "01", title: "The Conversation", body: "We start by understanding your goals, timeline, and what a win actually looks like for you." },
-  { n: "02", title: "The Strategy", body: "A clear, written plan — pricing, search criteria, or marketing — built around your situation." },
-  { n: "03", title: "The Search / Launch", body: "Buyers get curated options and early access. Sellers get pro marketing that hits the market with momentum." },
-  { n: "04", title: "The Negotiation", body: "We protect your position and your money — terms, contingencies, and price handled with care." },
-  { n: "05", title: "The Close", body: "Two decades of transaction experience means a smoother, on-time closing with fewer surprises." },
-  { n: "06", title: "Beyond the Close", body: "We stay in your corner — vendors, market updates, and guidance long after the keys change hands." },
+  { n: "01", title: "Let's Talk", body: "It starts with a real conversation — your goals, your timeline, and what a great outcome looks like for you." },
+  { n: "02", title: "Build the Plan", body: "We map out a clear, written game plan — pricing, search criteria, or marketing — tailored to your situation." },
+  { n: "03", title: "Make Your Move", body: "Buyers get hand-picked options and a head start. Sellers get professional marketing that launches with momentum." },
+  { n: "04", title: "Negotiate Hard", body: "We go to bat for you on price, terms, and contingencies — protecting your money at every turn." },
+  { n: "05", title: "Get to Closing", body: "Decades of deals behind us means a smoother, on-time close with far fewer surprises." },
+  { n: "06", title: "Stay in Your Corner", body: "The relationship doesn't end at the keys — trusted vendors, market updates, and advice whenever you need it." },
 ];
 
 export function ProcessTimeline() {
@@ -14,8 +14,8 @@ export function ProcessTimeline() {
     <section className="bg-forest2 py-20 md:py-28">
       <div className="mx-auto max-w-3xl px-6">
         <div className="text-center">
-          <Eyebrow className="!text-mint block">Our Process</Eyebrow>
-          <h2 className="mt-4 font-serif text-3xl text-white md:text-4xl">How we work with you</h2>
+          <Eyebrow className="!text-mint block">How It Works</Eyebrow>
+          <h2 className="mt-4 font-serif text-3xl text-white md:text-4xl">From first call to closing day</h2>
         </div>
 
         <div className="relative mt-16">

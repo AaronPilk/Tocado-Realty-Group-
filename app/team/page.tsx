@@ -12,9 +12,9 @@ export const metadata = buildMetadata({
 });
 
 const values = [
-  { t: "Local Experts", d: "We live and work in these markets — and it shows in every recommendation." },
-  { t: "Real Relationships", d: "We're in it for the long haul, not the quick transaction." },
-  { t: "Market Confidence", d: "Two decades of experience means you always know your next move." },
+  { t: "Local Knowledge", d: "We live and work in these communities — and it shows in every recommendation." },
+  { t: "Long-Term Relationships", d: "We're here for the long haul, not a one-and-done transaction." },
+  { t: "Steady Guidance", d: "Two decades of experience means you always know your next smart move." },
 ];
 
 export default function TeamPage() {

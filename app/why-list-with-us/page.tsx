@@ -15,10 +15,10 @@ export const metadata = buildMetadata({
 });
 
 const features = [
-  { t: "Professional Media", d: "Magazine-grade photography, video, and floor plans that make buyers stop scrolling." },
-  { t: "Full Portal Syndication", d: "Your home on the MLS, Zillow, Realtor.com, Redfin, and every major search portal." },
-  { t: "Social & Paid Ads", d: "Targeted social campaigns and paid promotion that put your listing in front of active buyers." },
-  { t: "Agent-to-Agent Reach", d: "Your listing is pushed directly to the local agent network the day it launches." },
+  { t: "Standout Media", d: "Magazine-quality photos, video, and floor plans that stop buyers mid-scroll." },
+  { t: "Everywhere Buyers Look", d: "Your home on the MLS, Zillow, Realtor.com, Redfin, and every major search site." },
+  { t: "Social & Paid Reach", d: "Targeted social campaigns and paid ads that put your listing in front of active buyers." },
+  { t: "The Agent Network", d: "We get your home in front of the local agent community the day it goes live." },
 ];
 
 const plan = [
@@ -36,7 +36,7 @@ export default function WhyListPage() {
       <PageHero
         eyebrow="Why List With Us"
         title={`Why list with ${siteConfig.shortName}?`}
-        accent="Because presentation sells."
+        accent="Because how you sell matters."
         body="A pricing and marketing system designed to sell your home for more, in less time — backed by two decades of experience."
         treatment="dark"
       >
@@ -52,8 +52,8 @@ export default function WhyListPage() {
 
       <Section className="bg-cream">
         <div className="max-w-2xl">
-          <Eyebrow>Premium Listing Exposure</Eyebrow>
-          <h2 className="mt-3 font-serif text-3xl md:text-4xl">Your listing hits the market with momentum</h2>
+          <Eyebrow>Marketing That Sells</Eyebrow>
+          <h2 className="mt-3 font-serif text-3xl md:text-4xl">We put your home in front of the right buyers</h2>
           <p className="mt-4 text-sm leading-7 text-muted">
             We combine professional media, full portal syndication, social and
             paid advertising, and direct agent outreach so your home reaches the
@@ -72,8 +72,8 @@ export default function WhyListPage() {
 
       <Section className="bg-white">
         <div className="max-w-2xl">
-          <Eyebrow>The 10-Day Plan</Eyebrow>
-          <h2 className="mt-3 font-serif text-3xl md:text-4xl">From prep to offers in 10 days</h2>
+          <Eyebrow>The Launch Plan</Eyebrow>
+          <h2 className="mt-3 font-serif text-3xl md:text-4xl">From prep to offers, without the guesswork</h2>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {plan.map((p) => (

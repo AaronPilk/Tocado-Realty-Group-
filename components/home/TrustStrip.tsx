@@ -1,9 +1,9 @@
 import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const reviewCards = [
-  { source: "Zillow", rating: "★★★★★", note: "Verified buyer & seller reviews" },
-  { source: "Google", rating: "★★★★★", note: "Trusted across the Carolinas" },
-  { source: "Realtor.com", rating: "★★★★★", note: "Top-rated local agents" },
+  { source: "Zillow", rating: "★★★★★", note: "Real buyer & seller reviews" },
+  { source: "Google", rating: "★★★★★", note: "Rated across the Carolinas" },
+  { source: "Realtor.com", rating: "★★★★★", note: "Highly-rated locally" },
 ];
 
 export function TrustStrip() {
@@ -12,9 +12,9 @@ export function TrustStrip() {
       <div className="mx-auto max-w-container px-6">
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_auto_1fr]">
           <div>
-            <Eyebrow>Trusted &amp; Reviewed</Eyebrow>
+            <Eyebrow>What Clients Say</Eyebrow>
             <h2 className="mt-3 font-serif text-2xl md:text-3xl">
-              A top-ranked team in the Carolinas
+              Five-star service across the Carolinas
             </h2>
           </div>
 
@@ -29,8 +29,8 @@ export function TrustStrip() {
           </div>
 
           <p className="text-sm leading-6 text-muted lg:text-right">
-            Relationship-first guidance, backed by two decades of real estate
-            and mortgage experience.
+            Honest, hands-on guidance backed by two decades of real estate
+            and mortgage know-how.
           </p>
         </div>
       </div>

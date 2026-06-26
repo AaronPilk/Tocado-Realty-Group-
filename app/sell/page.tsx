@@ -12,10 +12,10 @@ export const metadata = buildMetadata({
 });
 
 const pillars = [
-  { t: "Smart Pricing", d: "Data-driven pricing that maximizes your return without sitting on the market." },
-  { t: "Standout Marketing", d: "Professional photography, video, social, and portal syndication built to convert." },
-  { t: "Maximum Exposure", d: "Your listing hits the MLS and every major portal, reaching buyers on day one." },
-  { t: "Skilled Negotiation", d: "Twenty years of experience protecting your price, terms, and timeline." },
+  { t: "Right Price", d: "Data-backed pricing that earns top dollar without leaving your home sitting." },
+  { t: "Great Marketing", d: "Pro photography, video, social, and portal syndication built to win buyers." },
+  { t: "Wide Exposure", d: "Your home on the MLS and every major site, reaching buyers from day one." },
+  { t: "Strong Negotiation", d: "Two decades of experience protecting your price, your terms, and your timeline." },
 ];
 
 export default function SellPage() {

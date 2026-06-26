@@ -20,8 +20,8 @@ export function OfficeLocations() {
     <section className="bg-ivory py-20 md:py-28">
       <div className="mx-auto max-w-container px-6">
         <div className="max-w-2xl">
-          <Eyebrow>Where We Work</Eyebrow>
-          <h2 className="mt-4 font-serif text-3xl md:text-4xl">North Carolina markets we serve</h2>
+          <Eyebrow>Areas We Serve</Eyebrow>
+          <h2 className="mt-4 font-serif text-3xl md:text-4xl">Communities across the Carolinas</h2>
         </div>
 
         <div className="mt-12 grid gap-10 lg:grid-cols-2">

@@ -8,46 +8,47 @@ import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildMetadata({
   title: "Our Story",
-  description: "Real estate, done with intention — the story behind our North Carolina team, founded by Richard Tocado.",
+  description: "The story behind Tocado Realty Group — a relationship-first North Carolina real estate team founded by Richard Tocado.",
   path: "/our-story",
 });
 
 const coreValues = [
-  { n: "01", t: "Relationships Over Transactions", d: "We measure success in trust earned, not just deals closed." },
-  { n: "02", t: "Strategic Guidance", d: "Every move backed by data, experience, and a clear plan." },
-  { n: "03", t: "Elevated Experience", d: "A calmer, sharper, more polished way to buy and sell." },
-  { n: "04", t: "Growth + Balance", d: "We build careers and serve clients without burning out." },
-  { n: "05", t: "Wealth-Building Mindset", d: "Real estate as a long-term strategy, not a one-time event." },
+  { n: "01", t: "People Before Paperwork", d: "We measure success by trust earned, not just deals closed." },
+  { n: "02", t: "A Real Game Plan", d: "Every move is backed by data, experience, and a plan that fits you." },
+  { n: "03", t: "A Smoother Experience", d: "A calmer, clearer, less stressful way to buy or sell." },
+  { n: "04", t: "In It For The Long Run", d: "We're building relationships, not chasing one-time commissions." },
+  { n: "05", t: "Building Real Wealth", d: "We treat real estate as a long-term strategy, not a single transaction." },
 ];
 
-const traits = ["Refined", "Intentional", "Approachable", "Trusted", "Confident", "Relentless"];
+const traits = ["Down-to-Earth", "Strategic", "Approachable", "Trusted", "Straightforward", "Relentless"];
 
 export default function OurStoryPage() {
   return (
     <>
       <PageHero
-        title="Real Estate,"
-        accent="Done With Intention."
+        eyebrow="Our Story"
+        title="Real estate that"
+        accent="actually feels personal."
         treatment="dark"
       />
 
       <Section className="bg-white">
         <div className="mx-auto max-w-3xl text-center">
           <Eyebrow className="block">Our Approach</Eyebrow>
-          <h2 className="mt-4 font-serif text-3xl md:text-4xl">A different kind of real estate experience</h2>
+          <h2 className="mt-4 font-serif text-3xl md:text-4xl">A better way to buy and sell</h2>
           <p className="mt-6 text-sm leading-7 text-muted">
-            Our team was founded by Richard Tocado on a simple belief: real
-            estate should feel like having a trusted expert in your corner — not
-            a salesperson rushing you to the finish line. With more than two
-            decades across real estate, title, and mortgage since 2002, Richard
-            built this team to guide buyers and sellers across North Carolina
-            with clarity, strategy, and genuine care.
+            Tocado Realty Group started with one idea: working with a real estate
+            agent should feel like having a trusted expert on your side — not a
+            salesperson pushing you to sign. After more than twenty years across
+            real estate, title, and mortgage since 2002, Richard set out to give
+            North Carolina buyers and sellers exactly that: clarity, strategy,
+            and genuine care.
           </p>
           <p className="mt-4 text-sm leading-7 text-muted">
-            Licensed in North Carolina and South Carolina, he brings a rare,
-            full-picture understanding of the transaction — the kind that protects
-            your money and your peace of mind from first conversation to closing
-            and beyond.
+            Licensed in both North Carolina and South Carolina, he brings a
+            rare, full-picture view of how a deal really comes together — the kind
+            of insight that protects your money and your peace of mind from the
+            first conversation through closing and well beyond.
           </p>
         </div>
       </Section>
@@ -95,7 +96,7 @@ export default function OurStoryPage() {
       <Section className="bg-forest2">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-serif text-3xl text-white md:text-4xl">
-            Ready to experience real estate <span className="glow-green italic text-mint">done with intention?</span>
+            Ready for real estate that <span className="glow-green italic text-mint">puts you first?</span>
           </h2>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button href="/contact" variant="orange">Speak With Us</Button>
