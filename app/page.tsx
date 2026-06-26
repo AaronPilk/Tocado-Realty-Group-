@@ -3,7 +3,6 @@ import { TrustStrip } from "@/components/home/TrustStrip";
 import { SalesTicker } from "@/components/home/SalesTicker";
 import { StatsBand } from "@/components/home/StatsBand";
 import { FounderStory } from "@/components/home/FounderStory";
-import { BuyerSellerCards } from "@/components/home/BuyerSellerCards";
 import { ProcessTimeline } from "@/components/home/ProcessTimeline";
 import { MarketReport } from "@/components/home/MarketReport";
 import { OfficeLocations } from "@/components/home/OfficeLocations";
@@ -16,7 +15,6 @@ export default function HomePage() {
       <SalesTicker />
       <StatsBand />
       <FounderStory />
-      <BuyerSellerCards />
       <ProcessTimeline />
       <MarketReport />
       <OfficeLocations />
