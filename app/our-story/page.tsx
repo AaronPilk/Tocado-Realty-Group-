@@ -8,7 +8,7 @@ import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildMetadata({
   title: "Our Story",
-  description: "Real estate, done with intention — the story behind our North Carolina team, founded by Stephenie Tocado.",
+  description: "Real estate, done with intention — the story behind our North Carolina team, founded by Richard Tocado.",
   path: "/our-story",
 });
 
@@ -36,15 +36,15 @@ export default function OurStoryPage() {
           <Eyebrow className="block">Our Approach</Eyebrow>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">A different kind of real estate experience</h2>
           <p className="mt-6 text-sm leading-7 text-muted">
-            Our team was founded by Stephenie Tocado on a simple belief: real
+            Our team was founded by Richard Tocado on a simple belief: real
             estate should feel like having a trusted expert in your corner — not
             a salesperson rushing you to the finish line. With more than two
-            decades across real estate, title, and mortgage since 2002, Stephenie
+            decades across real estate, title, and mortgage since 2002, Richard
             built this team to guide buyers and sellers across North Carolina
             with clarity, strategy, and genuine care.
           </p>
           <p className="mt-4 text-sm leading-7 text-muted">
-            Licensed in North Carolina and South Carolina, she brings a rare,
+            Licensed in North Carolina and South Carolina, he brings a rare,
             full-picture understanding of the transaction — the kind that protects
             your money and your peace of mind from first conversation to closing
             and beyond.

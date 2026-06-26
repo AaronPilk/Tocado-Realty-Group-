@@ -3,6 +3,6 @@
 export const stats = [
   { value: "250+", label: "Families Served" },   // [[MOCK]]
   { value: "$185M+", label: "Volume Sold" },     // [[MOCK]]
-  { value: "20+", label: "Years In Real Estate" }, // real — Stephenie since 2002
+  { value: "20+", label: "Years In Real Estate" }, // real — Richard since 2002
   { value: "12+", label: "NC Markets Served" },  // [[MOCK]]
 ];

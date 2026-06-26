@@ -23,7 +23,7 @@ export default function TeamPage() {
       <PageHero
         eyebrow="Our People"
         title="Meet the team"
-        body="A relationship-first group of North Carolina agents led by founder Stephenie Tocado."
+        body="A relationship-first group of North Carolina agents led by founder Richard Tocado."
         treatment="ivory"
       >
         <Button href="/contact" variant="orange">Contact the Team</Button>

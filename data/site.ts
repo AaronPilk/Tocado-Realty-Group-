@@ -22,7 +22,7 @@ export const siteConfig = {
   email: "S.tocado@rtocado.com",
   address: "Charlotte, North Carolina", // [[add full office street address when ready]]
 
-  // ── Lead delivery (Formspree → emails Stephenie) ────────────
+  // ── Lead delivery (Formspree → emails Richard) ────────────
   // 1. Make a free form at https://formspree.io (set the notification email to
   //    your mom's address). 2. Paste the endpoint it gives you below, e.g.
   //    "https://formspree.io/f/abcdwxyz". Until set, forms show success but
@@ -46,11 +46,11 @@ export const siteConfig = {
     youtube: "",
   },
 
-  // ── Founder (REAL — Stephenie Tocado) ───────────────────────
+  // ── Founder (REAL — Richard Tocado) ───────────────────────
   founder: {
-    name: "Stephenie Tocado",
+    name: "Richard Tocado",
     title: "Founder & Lead Broker",
-    image: "/images/stephenie.png",
+    image: "/images/richard.jpg",
     sinceYear: 2002,
   },
 

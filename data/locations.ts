@@ -13,7 +13,7 @@ export type Location = {
 };
 
 // North Carolina market pages — strong for local SEO ("<city> NC homes for sale").
-// Charlotte metro is prioritized (Stephenie is Charlotte-based). Trim/expand to
+// Charlotte metro is prioritized (Richard is Charlotte-based). Trim/expand to
 // the real markets your mom serves.
 export const locations: Location[] = [
   {

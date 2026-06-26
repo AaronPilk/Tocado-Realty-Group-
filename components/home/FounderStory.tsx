@@ -31,14 +31,14 @@ export function FounderStory() {
               <span className="glow-green italic text-mint">relationships, not transactions.</span>
             </h2>
             <p className="mt-5 text-sm leading-7 text-white/70">
-              Stephenie Tocado has spent more than twenty years inside the
+              Richard Tocado has spent more than twenty years inside the
               transaction — real estate, title, and mortgage since 2002. That
-              full-picture experience means she sees what most agents miss: the
+              full-picture experience means he sees what most agents miss: the
               details that protect your money, your timeline, and your peace of
               mind.
             </p>
             <p className="mt-4 text-sm leading-7 text-white/70">
-              Licensed in North Carolina and South Carolina, she built this team
+              Licensed in North Carolina and South Carolina, he built this team
               to give buyers and sellers a calmer, sharper way to move — proactive
               communication, real strategy, and a standard of care that doesn&apos;t
               end at the closing table.
