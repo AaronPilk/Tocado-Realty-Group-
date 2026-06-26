@@ -3,6 +3,7 @@ export const navLinks = [
   { label: "Buy", href: "/buy" },
   { label: "Sell", href: "/sell" },
   { label: "Why List With Us", href: "/why-list-with-us" },
+  { label: "Calculator", href: "/mortgage-calculator" },
   { label: "Our Story", href: "/our-story" },
 ];
 
