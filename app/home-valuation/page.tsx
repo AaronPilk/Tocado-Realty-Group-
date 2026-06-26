@@ -42,7 +42,7 @@ export default function HomeValuationPage() {
               free, no-obligation market analysis prepared just for your home.
             </p>
           </div>
-          <div className="rounded-2xl border border-black/5 bg-cream p-8 shadow-float">
+          <div className="reveal rounded-2xl border border-black/5 bg-cream p-8 shadow-float">
             <LeadForm
               leadType="home-valuation"
               fields={["firstName", "lastName", "email", "phone", "propertyAddress", "timeline", "message"]}

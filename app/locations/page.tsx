@@ -32,7 +32,7 @@ export default function LocationsPage() {
             <Link
               key={loc.slug}
               href={`/locations/${loc.slug}`}
-              className="lift group block overflow-hidden rounded-2xl border border-black/5 bg-white shadow-float"
+              className="lift group block overflow-hidden reveal rounded-2xl border border-black/5 bg-white shadow-float"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 {loc.image ? (

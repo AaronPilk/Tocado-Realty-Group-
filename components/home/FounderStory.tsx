@@ -7,7 +7,7 @@ export function FounderStory() {
   return (
     <section className="bg-cream py-20 md:py-28">
       <div className="mx-auto max-w-[1180px] px-6">
-        <div className="grid items-stretch overflow-hidden rounded-2xl border border-black/5 shadow-float bg-white shadow-[0_40px_90px_-50px_rgba(0,0,0,0.4)] md:grid-cols-2">
+        <div className="grid items-stretch overflow-hidden reveal rounded-2xl border border-black/5 shadow-float bg-white shadow-[0_40px_90px_-50px_rgba(0,0,0,0.4)] md:grid-cols-2">
           {/* Portrait */}
           <div className="relative min-h-[380px]">
             <Image

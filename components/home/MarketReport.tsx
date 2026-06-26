@@ -81,7 +81,7 @@ export function MarketReport() {
         </div>
 
         {/* Chart */}
-        <div className="mt-10 rounded-2xl border border-black/5 shadow-float bg-cream/40 p-4 md:p-8">
+        <div className="mt-10 reveal rounded-2xl border border-black/5 shadow-float bg-cream/40 p-4 md:p-8">
           <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={`${m.label} over the last 12 months`}>
             <defs>
               <linearGradient id="mr-fill" x1="0" y1="0" x2="0" y2="1">
@@ -104,7 +104,7 @@ export function MarketReport() {
         </div>
 
         {/* Stat row */}
-        <div className="mt-8 grid grid-cols-1 divide-y divide-line rounded-2xl border border-black/5 shadow-float sm:grid-cols-3 sm:divide-x sm:divide-y-0">
+        <div className="mt-8 grid grid-cols-1 divide-y divide-line reveal rounded-2xl border border-black/5 shadow-float sm:grid-cols-3 sm:divide-x sm:divide-y-0">
           {[
             { v: "14", l: "Avg. Days on Market" },
             { v: "99.4%", l: "List-to-Sale Ratio" },

@@ -25,7 +25,7 @@ export function HomeSearchDropdown() {
 
       {open && (
         <div className="absolute left-1/2 top-full z-50 -translate-x-1/2 pt-4">
-          <div className="w-[640px] rounded-2xl border border-black/5 shadow-float bg-ivory p-6 shadow-[0_40px_80px_-30px_rgba(0,0,0,0.4)]">
+          <div className="w-[640px] reveal rounded-2xl border border-black/5 shadow-float bg-ivory p-6 shadow-[0_40px_80px_-30px_rgba(0,0,0,0.4)]">
             <div className="mb-5 flex gap-6 border-b border-line pb-4">
               <Link href="/search" className="text-[12px] font-semibold uppercase tracking-[0.12em] text-orange hover:text-black">
                 Browse All Listings →

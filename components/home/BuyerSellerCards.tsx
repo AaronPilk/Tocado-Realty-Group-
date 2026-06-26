@@ -36,7 +36,7 @@ export function BuyerSellerCards() {
 
         <div className="mt-14 grid gap-8 md:grid-cols-2">
           {cards.map((c) => (
-            <div key={c.title} className="lift overflow-hidden rounded-2xl border border-black/5 bg-white shadow-float">
+            <div key={c.title} className="lift overflow-hidden reveal rounded-2xl border border-black/5 bg-white shadow-float">
               <div className="relative aspect-[16/10]">
                 <div className={`photo-fill ${c.treatment}`} />
                 <h3 className="absolute bottom-5 left-6 font-serif text-3xl text-white">{c.title}</h3>

@@ -74,7 +74,7 @@ export function AffordabilityCalculator() {
   return (
     <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
       {/* Inputs */}
-      <div className="rounded-2xl border border-black/5 bg-white p-6 shadow-float md:p-8">
+      <div className="reveal rounded-2xl border border-black/5 bg-white p-6 shadow-float md:p-8">
         <div className="space-y-4">
           <div>
             <label className={labelClass}>Annual Household Income</label>
@@ -111,7 +111,7 @@ export function AffordabilityCalculator() {
       </div>
 
       {/* Results */}
-      <div className="flex flex-col rounded-2xl border border-black/5 bg-cream p-6 shadow-float md:p-8">
+      <div className="flex flex-col reveal rounded-2xl border border-black/5 bg-cream p-6 shadow-float md:p-8">
         <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-orange">You Could Afford Up To</p>
         <div className="mt-1 font-serif text-5xl text-black md:text-6xl">
           {affordsLittle ? usd(down) : usd(result.price)}

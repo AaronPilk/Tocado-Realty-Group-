@@ -23,7 +23,7 @@ export default function ContactPage() {
       />
       <Section className="bg-cream">
         <div className="grid gap-12 lg:grid-cols-[1fr_360px]">
-          <div className="rounded-2xl border border-black/5 shadow-float bg-white p-8">
+          <div className="reveal rounded-2xl border border-black/5 shadow-float bg-white p-8">
             <h2 className="font-serif text-2xl">Send us a message</h2>
             <div className="mt-6">
               <LeadForm

@@ -58,7 +58,7 @@ export function InstantValuation() {
 
   if (status === "done" && result) {
     return (
-      <div className="rounded-2xl border border-black/5 bg-white p-8 text-center shadow-float">
+      <div className="reveal rounded-2xl border border-black/5 bg-white p-8 text-center shadow-float">
         <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-orange">Estimated Value</p>
         <div className="mt-3 font-serif text-5xl text-black md:text-6xl">{money(result.price)}</div>
         {result.low != null && result.high != null && (
@@ -87,7 +87,7 @@ export function InstantValuation() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="rounded-2xl border border-black/5 bg-white p-6 shadow-float md:p-8">
+    <form onSubmit={onSubmit} className="reveal rounded-2xl border border-black/5 bg-white p-6 shadow-float md:p-8">
       <div>
         <label className={label}>Street Address</label>
         <input

@@ -5,6 +5,7 @@ import { TopBar } from "@/components/layout/TopBar";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/ui/JsonLd";
+import { ScrollReveal } from "@/components/ScrollReveal";
 import { realEstateAgencySchema } from "@/lib/seo/schema";
 import { siteConfig } from "@/data/site";
 
@@ -31,8 +32,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+      <head>
+        {/* Fallback: if JS is disabled, show everything (don't leave it hidden) */}
+        <noscript>
+          <style>{`.reveal{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
+      </head>
       <body>
         <JsonLd data={realEstateAgencySchema()} />
+        <ScrollReveal />
         <TopBar />
         <Header />
         <main>{children}</main>

@@ -39,7 +39,7 @@ export default function SellPage() {
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {pillars.map((p, i) => (
-            <div key={p.t} className="rounded-2xl border border-black/5 shadow-float bg-white p-6">
+            <div key={p.t} className="reveal rounded-2xl border border-black/5 shadow-float bg-white p-6">
               <div className="font-serif text-3xl text-orange">0{i + 1}</div>
               <h3 className="mt-3 font-serif text-xl">{p.t}</h3>
               <p className="mt-2 text-sm leading-6 text-muted">{p.d}</p>
@@ -49,7 +49,7 @@ export default function SellPage() {
       </Section>
 
       <Section className="bg-white">
-        <div className="mx-auto max-w-2xl rounded-2xl border border-black/5 shadow-float bg-cream p-8">
+        <div className="mx-auto max-w-2xl reveal rounded-2xl border border-black/5 shadow-float bg-cream p-8">
           <Eyebrow>Free, No Obligation</Eyebrow>
           <h2 className="mt-3 font-serif text-3xl">What&apos;s your home worth?</h2>
           <p className="mt-2 text-sm text-muted">Tell us about your property and we&apos;ll prepare a custom valuation.</p>

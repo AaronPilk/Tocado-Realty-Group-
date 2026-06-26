@@ -56,7 +56,7 @@ export default function NeighborhoodPage({ params }: { params: { slug: string } 
               <p key={i} className="mt-5 text-sm leading-7 text-black/80">{p}</p>
             ))}
           </div>
-          <aside className="h-fit rounded-2xl border border-black/5 bg-cream p-6 shadow-float">
+          <aside className="h-fit reveal rounded-2xl border border-black/5 bg-cream p-6 shadow-float">
             <Eyebrow>Known For</Eyebrow>
             <ul className="mt-4 space-y-3">
               {n.highlights.map((h) => (

@@ -40,7 +40,7 @@ export function JoinTeamForm() {
 
   if (status === "done") {
     return (
-      <div className="rounded-2xl border border-black/5 shadow-float bg-white p-8 text-center">
+      <div className="reveal rounded-2xl border border-black/5 shadow-float bg-white p-8 text-center">
         <p className="font-serif text-2xl">Application received.</p>
         <p className="mt-2 text-sm text-muted">
           We&apos;ll reach out to set up a confidential conversation.

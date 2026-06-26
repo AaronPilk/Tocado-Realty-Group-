@@ -69,7 +69,7 @@ export default function LocationDetailPage({ params }: { params: { slug: string 
             </div>
           </div>
 
-          <aside className="h-fit rounded-2xl border border-black/5 shadow-float bg-cream p-6">
+          <aside className="h-fit reveal rounded-2xl border border-black/5 shadow-float bg-cream p-6">
             <h2 className="font-serif text-2xl">Talk to a {loc.name} expert</h2>
             <div className="mt-5">
               <LeadForm

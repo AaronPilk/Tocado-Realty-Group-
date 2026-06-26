@@ -123,7 +123,7 @@ export function AreaMap({ name, center }: { name: string; center: { lat: number;
   if (failed) {
     const q = encodeURIComponent(`${name}, North Carolina`);
     return (
-      <div className="overflow-hidden rounded-2xl border border-black/5 shadow-float">
+      <div className="overflow-hidden reveal rounded-2xl border border-black/5 shadow-float">
         <iframe
           title={`Map of ${name}`}
           src={`https://maps.google.com/maps?q=${q}&z=13&output=embed`}
@@ -161,7 +161,7 @@ export function AreaMap({ name, center }: { name: string; center: { lat: number;
         })}
       </div>
 
-      <div ref={mapRef} className="h-[460px] w-full overflow-hidden rounded-2xl border border-black/5 shadow-float md:h-[520px]" />
+      <div ref={mapRef} className="h-[460px] w-full overflow-hidden reveal rounded-2xl border border-black/5 shadow-float md:h-[520px]" />
 
       <p className="mt-3 text-[12px] text-muted">
         {ready ? "Click any marker to learn more." : "Loading nearby places…"} Local points of interest near {name}.
