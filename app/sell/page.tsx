@@ -27,6 +27,7 @@ export default function SellPage() {
         accent="in less time."
         body="Pricing, presentation, and exposure engineered to put your home in front of the right buyers — and close on your terms."
         treatment="charcoal"
+        image="/images/property/exterior-green.jpg"
       >
         <Button href="/home-valuation" variant="orange">Get Your Home Value</Button>
         <Button href="/contact" variant="outlineLight">Speak With an Agent</Button>

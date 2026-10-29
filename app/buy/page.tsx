@@ -34,10 +34,11 @@ export default function BuyPage() {
         eyebrow="Buy With Us"
         title="Buying a home,"
         accent="without the guesswork."
-        body="A clear plan, real local data, and a team that negotiates hard on your behalf — from first search to keys in hand."
+        body="A clear plan, real local data, and an experienced broker negotiating hard on your behalf — from first search to keys in hand."
         treatment="dark"
+        image="/images/property/exterior-white.jpg"
       >
-        <Button href="/search" variant="orange">Browse Listings</Button>
+        <Button href="/search" variant="orange">Search Homes</Button>
         <Button href="/mortgage-calculator" variant="outlineLight">Affordability Calculator</Button>
       </PageHero>
 

@@ -30,7 +30,7 @@ export function Footer() {
               {siteConfig.heroBody}
             </p>
             <p className="mt-4 text-[12px] uppercase tracking-[0.14em] text-mint">
-              ★★★★★ Trusted across the Carolinas
+              {siteConfig.tagline}
             </p>
           </div>
 
@@ -101,7 +101,10 @@ export function Footer() {
           </div>
           <div className="mt-6 space-y-2 text-[11px] leading-5 text-white/40">
             <p>
-              {siteConfig.name} · {siteConfig.legal.license} · {siteConfig.legal.brokerageLicense}
+              {siteConfig.brokerage} (dba {siteConfig.name}) · {siteConfig.address}
+            </p>
+            <p>
+              {siteConfig.legal.license} · {siteConfig.legal.brokerageLicense} · {siteConfig.legal.canopy}
             </p>
             <p>{siteConfig.legal.idxDisclaimer}</p>
             <p className="flex items-center gap-2">

@@ -12,9 +12,9 @@ export type Location = {
   image?: string;
 };
 
-// North Carolina market pages — strong for local SEO ("<city> NC homes for sale").
-// Charlotte metro is prioritized (Richard is Charlotte-based). Trim/expand to
-// the real markets your mom serves.
+// Stephenie's real service area: greater Charlotte + the NC/SC border region
+// (roughly Statesville to Clover, Oakboro to McAdenville). Kept to markets she
+// actually serves — no unsupported geographic coverage.
 export const locations: Location[] = [
   {
     slug: "charlotte",
@@ -22,70 +22,66 @@ export const locations: Location[] = [
     state: "NC",
     serviceArea: "Charlotte & Mecklenburg County",
     phone: "(704) 661-3414",
-    blurb: "The Queen City — uptown energy, established neighborhoods, and steady appreciation.",
+    blurb: "The Queen City — uptown energy, established neighborhoods, and steady demand.",
     description:
-      "Charlotte is the anchor of our market. From historic Dilworth and Myers Park to fast-growing South End and Ballantyne, we help buyers and sellers move with strategy in one of the Southeast's strongest housing markets.",
+      "Charlotte is the heart of our market. From Ballantyne and SouthPark to Myers Park, Dilworth, and South End, Stephenie helps buyers and sellers move with strategy in one of the Southeast's strongest housing markets.",
     treatment: "dark",
     image: "/images/locations/charlotte.jpg",
+  },
+  {
+    slug: "ballantyne",
+    name: "Ballantyne",
+    state: "NC",
+    serviceArea: "Ballantyne & South Charlotte",
+    phone: "(704) 661-3414",
+    blurb: "South Charlotte's polished hub — corporate park, golf, and sought-after schools.",
+    description:
+      "Home base for Tocado & Company. Ballantyne pairs master-planned neighborhoods, golf, and top schools with quick access to uptown — a perennial favorite for move-up buyers and relocating families.",
+    treatment: "warm",
   },
   {
     slug: "lake-norman",
     name: "Lake Norman",
     state: "NC",
-    serviceArea: "Cornelius, Davidson, Huntersville, Mooresville",
+    serviceArea: "Cornelius, Davidson, Huntersville",
     phone: "(704) 661-3414",
-    blurb: "Waterfront living north of Charlotte — luxury, lake access, and lifestyle.",
+    blurb: "Waterfront living north of Charlotte — lake access, golf, and lifestyle.",
     description:
-      "The Lake Norman towns offer waterfront estates, golf communities, and easy access to Charlotte. We specialize in pricing and marketing lake-area homes where presentation and timing drive premium results.",
-    treatment: "warm",
+      "The Lake Norman towns offer waterfront homes, golf communities, and an easy commute to Charlotte. Stephenie helps price, market, and win in an area where presentation and timing drive premium results.",
+    treatment: "charcoal",
     image: "/images/locations/lake-norman.jpg",
   },
   {
-    slug: "raleigh",
-    name: "Raleigh",
+    slug: "mooresville",
+    name: "Mooresville",
     state: "NC",
-    serviceArea: "Raleigh & Wake County",
+    serviceArea: "Mooresville, Statesville & northern Iredell",
     phone: "(704) 661-3414",
-    blurb: "The Triangle's capital — research, talent, and relentless demand.",
+    blurb: "Lake-town value north of the metro — new construction and room to grow.",
     description:
-      "Raleigh's mix of government, universities, and tech keeps demand high year-round. We guide relocating buyers and local sellers through a market that rewards preparation and sharp negotiation.",
-    treatment: "charcoal",
-    image: "/images/locations/raleigh.jpg",
-  },
-  {
-    slug: "durham",
-    name: "Durham",
-    state: "NC",
-    serviceArea: "Durham & surrounding Triangle",
-    phone: "(704) 661-3414",
-    blurb: "Bull City character — revitalized downtown and strong rental upside.",
-    description:
-      "Durham blends historic charm with new development around Duke and the Research Triangle. It's a market with real upside for buyers who move decisively and sellers who present well.",
+      "Mooresville and Statesville offer space, newer construction, and strong value at the north end of the market. A great fit for buyers trading square footage and lake access for a short drive to Charlotte.",
     treatment: "warm",
-    image: "/images/locations/durham.jpg",
   },
   {
-    slug: "greensboro",
-    name: "Greensboro",
+    slug: "waxhaw",
+    name: "Waxhaw & Weddington",
     state: "NC",
-    serviceArea: "Greensboro & the Triad",
+    serviceArea: "Waxhaw, Weddington, Marvin & Union County",
     phone: "(704) 661-3414",
-    blurb: "Triad value — affordability, space, and central NC access.",
+    blurb: "Union County's upscale small-town charm — larger lots and top schools.",
     description:
-      "Greensboro offers strong value and space for the money, with a central location connecting the Triad. We help first-time buyers and move-up families find the right fit at the right price.",
+      "Waxhaw, Weddington, and Marvin blend small-town character with some of the region's most sought-after schools and larger lots. Popular with families looking for space without leaving the Charlotte orbit.",
+    treatment: "dark",
+  },
+  {
+    slug: "fort-mill",
+    name: "Fort Mill",
+    state: "SC",
+    serviceArea: "Fort Mill, Indian Land, Clover & Rock Hill",
+    phone: "(704) 661-3414",
+    blurb: "Just over the SC line — low taxes, strong schools, and easy Charlotte access.",
+    description:
+      "The South Carolina border towns — Fort Mill, Indian Land, Clover, and Rock Hill — draw buyers with lower taxes, highly rated schools, and a quick commute into Charlotte. Licensed in SC, Stephenie covers both sides of the line.",
     treatment: "charcoal",
-    image: "/images/locations/greensboro.jpg",
-  },
-  {
-    slug: "asheville",
-    name: "Asheville",
-    state: "NC",
-    serviceArea: "Asheville & Buncombe County",
-    phone: "(704) 661-3414",
-    blurb: "Mountain lifestyle — second homes, character, and limited inventory.",
-    description:
-      "Asheville's mountain setting and lifestyle keep it competitive, with limited inventory and strong second-home demand. We position listings to stand out and help buyers win in tight conditions.",
-    treatment: "warm",
-    image: "/images/locations/asheville.jpg",
   },
 ];

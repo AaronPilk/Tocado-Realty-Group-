@@ -9,33 +9,40 @@
 
 export const siteConfig = {
   // ── Brand / firm ────────────────────────────────────────────
-  name: "Tocado Realty Group",
+  name: "Tocado & Company", // display / brand name
   shortName: "Tocado",
-  logoMark: "TRG", // crest text until a real logo is supplied
-  brokerage: "Tocado Realty Group", // her own NC brokerage firm
-  tagline: "Guiding Your Carolina Move.",
-  marketLabel: "Serving North Carolina",
+  logoMark: "TOCADO", // crest text fallback (real logo is used)
+  brokerage: "Tocado and Company Inc.", // legal firm name (footer / disclosures)
+  tagline: "Experienced Guidance. Personal Service. Carolina Real Estate.",
+  marketLabel: "Serving the Carolinas",
 
   // ── Contact ─────────────────────────────────────────────────
-  phone: "(704) 839-5599",
-  phoneHref: "tel:+17048395599",
-  email: "richardtocado@gmail.com",
-  address: "Charlotte, North Carolina", // [[add full office street address when ready]]
+  phone: "(704) 661-3414",
+  phoneHref: "tel:+17046613414",
+  email: "stephenie@tocadorealty.com",
+  // Public-facing office address (no suite number, per owner request)
+  address: "13230 Ballantyne Corporate Pl, Charlotte, NC 28277",
+  addressParts: {
+    street: "13230 Ballantyne Corporate Pl",
+    city: "Charlotte",
+    region: "NC",
+    postalCode: "28277",
+  },
 
-  // ── Lead delivery (Formspree → emails Richard) ────────────
+  // ── Lead delivery (Formspree → emails Stephenie) ────────────
   // 1. Make a free form at https://formspree.io (set the notification email to
-  //    your mom's address). 2. Paste the endpoint it gives you below, e.g.
-  //    "https://formspree.io/f/abcdwxyz". Until set, forms show success but
-  //    won't send — so add this before launch.
+  //    stephenie@tocadorealty.com). 2. Paste the endpoint it gives you below,
+  //    e.g. "https://formspree.io/f/abcdwxyz". Until set, forms show success
+  //    but won't send — so add this before launch.
   formEndpoint: "[[https://formspree.io/f/YOUR_FORM_ID]]",
 
   // ── Top bar / hero copy ─────────────────────────────────────
-  topBar: "Tocado Realty Group · Serving North Carolina",
-  heroEyebrow: "Relationship-First Real Estate Across North Carolina",
-  heroHeadlineMain: "Carolina Real Estate,",
-  heroHeadlineAccent: "Made Personal.",
+  topBar: "Tocado & Company · Experienced Guidance for the Carolinas",
+  heroEyebrow: "20+ Years in Real Estate, Mortgage & Title",
+  heroHeadlineMain: "A Different Perspective",
+  heroHeadlineAccent: "on Real Estate.",
   heroBody:
-    "From the first showing to closing day, we help buyers, sellers, and families move across North Carolina with honest guidance, sharp strategy, and care that doesn't end at the keys.",
+    "With more than 20 years of experience in real estate, mortgage lending, mortgage processing, and title insurance, Stephenie Tocado brings knowledge, perspective, and a personal approach to buying and selling homes throughout North Carolina and South Carolina.",
 
   // ── Social ──────────────────────────────────────────────────
   // Leave blank to hide the icon until the account exists. Paste a URL to show it.
@@ -46,24 +53,25 @@ export const siteConfig = {
     youtube: "",
   },
 
-  // ── Founder (REAL — Richard Tocado) ───────────────────────
+  // ── Owner / Broker (REAL — Stephenie Tocado) ────────────────
   founder: {
-    name: "Richard Tocado",
-    title: "Founder & Lead Broker",
-    image: "/images/richard.jpg",
+    name: "Stephenie Tocado",
+    title: "Owner, Broker / Broker-in-Charge",
+    image: "/images/stephenie-headshot.jpg",
     sinceYear: 2002,
   },
 
   // ── Legal / compliance (REVIEW WITH BROKER BEFORE LAUNCH) ────
   legal: {
-    license: "NC Broker License #262424",
-    brokerageLicense: "NC Firm License #C34507",
+    license: "NC Broker #262424 · SC Broker #101949",
+    brokerageLicense: "NC Firm #C34507 · SC Firm #28582",
+    canopy: "Canopy MLS · Agent #21910 · Office ID R00814",
     equalHousing: true,
     realtorMark: false, // only set true if legally permitted to use REALTOR®
     idxDisclaimer:
       "Listing information is deemed reliable but not guaranteed and should be independently verified. IDX information is provided exclusively for consumers' personal, non-commercial use and may not be used for any purpose other than to identify prospective properties consumers may be interested in purchasing.",
     consent:
-      "I agree to be contacted by Tocado Realty Group by phone, email, and text regarding real estate services. Message and data rates may apply. I can opt out at any time.",
+      "I agree to be contacted by Tocado & Company by phone, email, and text regarding real estate services. Message and data rates may apply. I can opt out at any time.",
   },
 } as const;
 

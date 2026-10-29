@@ -8,7 +8,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     "",
     "/search",
-    "/featured-listings",
     "/buy",
     "/sell",
     "/home-valuation",

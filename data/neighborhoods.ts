@@ -1,5 +1,5 @@
 // Neighborhood guides — SEO landing pages + interactive area map centers.
-// Each entry powers /neighborhoods/<slug>. Copy is original to Tocado Realty Group.
+// Each entry powers /neighborhoods/<slug>. Copy is original to Tocado & Company.
 
 export type Neighborhood = {
   slug: string;

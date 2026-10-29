@@ -12,3 +12,10 @@ next-env.d.ts
 
 # Cloudflare local secrets
 .dev.vars
+
+# Raw/original source images dropped in repo root (optimized copies live in /public/images)
+/*.png
+/*.jpg
+/*.jpeg
+/*.heic
+/*.webp

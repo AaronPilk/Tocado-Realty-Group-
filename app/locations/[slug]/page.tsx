@@ -16,8 +16,8 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }) {
   const loc = locations.find((l) => l.slug === params.slug);
   return buildMetadata({
-    title: loc ? `${loc.name}, NC Homes for Sale` : "Location",
-    description: loc?.description || "North Carolina real estate.",
+    title: loc ? `${loc.name}, ${loc.state} Homes for Sale` : "Location",
+    description: loc?.description || "Carolina real estate.",
     path: `/locations/${params.slug}`,
   });
 }

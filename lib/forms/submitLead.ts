@@ -3,7 +3,7 @@ import { siteConfig } from "@/data/site";
 
 /**
  * Static-site lead submit: posts directly to Formspree, which emails the lead
- * to Richard. Collects UTM/referrer/source automatically.
+ * to Stephenie. Collects UTM/referrer/source automatically.
  *
  * Set the endpoint in data/site.ts -> formEndpoint.
  */

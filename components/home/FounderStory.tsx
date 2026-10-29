@@ -25,23 +25,22 @@ export function FounderStory() {
 
           {/* Copy */}
           <div className="bg-forest p-9 text-white md:p-12">
-            <Eyebrow className="!text-mint">Meet The Founder</Eyebrow>
+            <Eyebrow className="!text-mint">Meet Stephenie</Eyebrow>
             <h2 className="mt-4 font-serif text-3xl leading-tight md:text-4xl">
-              Built on trust,{" "}
-              <span className="glow-green italic text-mint">not just transactions.</span>
+              Experience across{" "}
+              <span className="glow-green italic text-mint">every side of the deal.</span>
             </h2>
             <p className="mt-5 text-sm leading-7 text-white/70">
-              Richard Tocado has worked every side of the deal for more than two
-              decades — real estate, title, and mortgage since 2002. That
-              full-picture background lets him catch what other agents miss: the
-              small details that protect your money, your timeline, and your
-              peace of mind.
+              Stephenie Tocado brings more than 20 years across real estate,
+              mortgage lending, mortgage processing, and title insurance — a rare,
+              full-picture view of how a transaction really comes together, and the
+              details that protect your money and your peace of mind.
             </p>
             <p className="mt-4 text-sm leading-7 text-white/70">
-              Licensed in North Carolina and South Carolina, he started this team
-              to give buyers and sellers a calmer, smarter way to move — clear
-              communication, a real plan, and a level of care that keeps going
-              long after closing day.
+              As owner and Broker-in-Charge of Tocado &amp; Company, an independent
+              boutique brokerage, she takes a personal, straightforward approach:
+              honest communication, practical guidance, and lasting relationships.
+              Licensed in both North Carolina and South Carolina.
             </p>
 
             <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
@@ -50,17 +49,17 @@ export function FounderStory() {
                 <div className="text-[10px] uppercase tracking-[0.14em] text-white/50">Years Experience</div>
               </div>
               <div>
-                <div className="font-serif text-2xl text-mint">2</div>
-                <div className="text-[10px] uppercase tracking-[0.14em] text-white/50">States Licensed</div>
+                <div className="font-serif text-2xl text-mint">NC + SC</div>
+                <div className="text-[10px] uppercase tracking-[0.14em] text-white/50">Licensed</div>
               </div>
               <div>
-                <div className="font-serif text-2xl text-mint">100%</div>
-                <div className="text-[10px] uppercase tracking-[0.14em] text-white/50">Client-First</div>
+                <div className="font-serif text-2xl text-mint">4</div>
+                <div className="text-[10px] uppercase tracking-[0.14em] text-white/50">Areas of Expertise</div>
               </div>
             </div>
 
             <a href="/our-story" className="mt-8 inline-block text-[12px] font-semibold uppercase tracking-[0.16em] text-mint hover:text-white">
-              Our Story →
+              About Stephenie →
             </a>
           </div>
         </div>

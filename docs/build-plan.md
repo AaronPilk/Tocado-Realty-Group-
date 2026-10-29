@@ -36,7 +36,7 @@ public/images/           richard.png (real) + folders for team/locations photos
 - **SEO built in** — per-page metadata, sitemap, robots, JSON-LD (RealEstateAgent, Breadcrumb, FAQ).
 
 ## What's real vs. placeholder
-- **Real:** Richard's bio/story (20+ yrs, since 2002, NC+SC licensed), her portrait, Canopy MLS IDX, Charlotte-metro market focus.
+- **Real:** Stephenie's bio/story (20+ yrs, since 2002, NC+SC licensed), her portrait, Canopy MLS IDX, Charlotte-metro market focus.
 - **Placeholder (`[[ ]]`):** firm name, brokerage, phone, email, address, license #s, stats, ticker entries, extra agents, social links.
 
 ## Build status

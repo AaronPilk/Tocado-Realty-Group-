@@ -1,7 +1,8 @@
-// Top stat band. These are MOCK numbers for design — replace with real,
-// verifiable figures before launch (avoid claims you can't back up — compliance).
+// Verifiable, credential-based facts — no unverified transaction totals or
+// sales claims (per owner brief). Safe to display publicly.
 export const stats = [
-  { value: "10,000+", label: "Families Served" },  // [[verify before launch]]
-  { value: "$3.5B", label: "Volume Sold" },        // [[verify before launch]]
-  { value: "20+", label: "Years In Real Estate" }, // real — Richard since 2002
+  { value: "2002", label: "Serving Clients Since" },
+  { value: "20+", label: "Years of Experience" },
+  { value: "NC + SC", label: "Licensed In" },
+  { value: "4", label: "Areas of Expertise" }, // real estate · mortgage · processing · title
 ];

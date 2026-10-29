@@ -28,7 +28,7 @@ Drop real images in `public/images/` and swap the CSS placeholders for `<Image>`
 - [ ] Buyer/seller card photos → `components/home/BuyerSellerCards.tsx`
 - [ ] Location photos → `public/images/locations/` (referenced in `data/locations.ts`)
 - [ ] Agent headshots → `public/images/team/` (referenced in `data/team.ts`)
-- [ ] Richard's portrait is already in place ✅
+- [ ] Stephenie's portrait is already in place ✅
 
 ## 5. Legal (required before launch)
 - [ ] Attorney review: `/privacy-policy`, `/terms`, `/accessibility`

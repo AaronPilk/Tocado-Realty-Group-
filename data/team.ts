@@ -11,19 +11,19 @@ export type Agent = {
   bio: string;
 };
 
-// Richard is the firm. Add more agents here as the team grows.
+// Stephenie is the firm — an independent, boutique brokerage, sole agent.
 export const team: Agent[] = [
   {
-    slug: "richard-tocado",
-    name: "Richard Tocado",
-    title: "Founder, Broker-in-Charge",
+    slug: "stephenie-tocado",
+    name: "Stephenie Tocado",
+    title: "Owner, Broker / Broker-in-Charge",
     office: "Charlotte",
-    specialty: "Luxury",
-    image: "/images/richard.jpg",
+    specialty: "Selling",
+    image: "/images/stephenie-headshot.jpg",
     treatment: "warm",
-    email: "richardtocado@gmail.com",
-    phone: "(704) 839-5599",
-    bio: "With more than two decades in real estate and mortgage since 2002, Richard founded Tocado Realty Group on a simple standard: people come before paperwork. As a licensed North Carolina broker (and licensed in South Carolina), he knows every step of a deal — from the first conversation to the closing table — and sweats the details that protect his clients.",
+    email: "stephenie@tocadorealty.com",
+    phone: "(704) 661-3414",
+    bio: "With more than 20 years of experience across real estate, mortgage lending, mortgage processing, and title insurance, Stephenie Tocado brings a rare, full-picture view to every transaction. Since 2002 she has worked nearly every stage of the process — from financing and loan processing to title and closing — so her clients get someone who understands not just how to market and sell a home, but the financing and closing details that make a deal succeed. As owner and Broker-in-Charge of Tocado & Company, an independent boutique brokerage, she takes a personal, straightforward approach built on honest communication and lasting relationships. Licensed in North Carolina and South Carolina.",
   },
 ];
 

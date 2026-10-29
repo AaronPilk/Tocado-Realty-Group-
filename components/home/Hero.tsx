@@ -37,9 +37,9 @@ export function Hero() {
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button href="/search" variant="orange">Browse Properties</Button>
+          <Button href="/search" variant="orange">Search Homes</Button>
+          <Button href="/sell" variant="outlineLight">Sell Your Home</Button>
           <Button href="/home-valuation" variant="outlineLight">Home Valuation</Button>
-          <Button href="/contact" variant="outlineLight">Speak With An Agent</Button>
         </div>
 
         <div className="mt-10 flex items-center justify-center gap-5 text-[11px] uppercase tracking-[0.16em] text-white/60">
