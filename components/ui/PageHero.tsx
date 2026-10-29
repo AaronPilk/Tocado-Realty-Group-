@@ -22,18 +22,20 @@ export function PageHero({ eyebrow, title, accent, body, treatment = "dark", ima
       {!isLight && image && (
         <>
           <Image src={image} alt="" fill className="object-cover" priority />
+          {/* Layered scrim so text stays readable even over bright photos */}
           <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/55 to-black/80" />
         </>
       )}
       {!isLight && !image && <div className={`photo-fill ${bgClass}`} />}
       <div className="relative z-10 mx-auto max-w-3xl px-6 py-24 text-center md:py-32">
-        {eyebrow && <Eyebrow className={`block ${isLight ? "" : "glow-green !text-mint"}`}>{eyebrow}</Eyebrow>}
-        <h1 className={`mt-4 font-serif text-4xl leading-tight md:text-6xl ${isLight ? "text-black" : "text-white"}`}>
+        {eyebrow && <Eyebrow className={`block ${isLight ? "" : "!text-mint drop-shadow"}`}>{eyebrow}</Eyebrow>}
+        <h1 className={`mt-4 font-serif text-4xl leading-tight md:text-6xl ${isLight ? "text-black" : "text-white hero-text-shadow"}`}>
           {title}
-          {accent && <span className={`block italic ${isLight ? "text-orange" : "text-mint glow-green"}`}>{accent}</span>}
+          {accent && <span className={`block italic ${isLight ? "text-orange" : "text-mint hero-text-shadow"}`}>{accent}</span>}
         </h1>
         {body && (
-          <p className={`mx-auto mt-6 max-w-2xl text-sm leading-7 md:text-base ${isLight ? "text-muted" : "text-white/75"}`}>
+          <p className={`mx-auto mt-6 max-w-2xl text-sm leading-7 md:text-base ${isLight ? "text-muted" : "text-white hero-text-shadow"}`}>
             {body}
           </p>
         )}

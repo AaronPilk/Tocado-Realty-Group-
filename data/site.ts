@@ -29,12 +29,14 @@ export const siteConfig = {
     postalCode: "28277",
   },
 
-  // ── Lead delivery (Formspree → emails Stephenie) ────────────
-  // 1. Make a free form at https://formspree.io (set the notification email to
-  //    stephenie@tocadorealty.com). 2. Paste the endpoint it gives you below,
-  //    e.g. "https://formspree.io/f/abcdwxyz". Until set, forms show success
-  //    but won't send — so add this before launch.
-  formEndpoint: "[[https://formspree.io/f/YOUR_FORM_ID]]",
+  // ── Lead delivery (Web3Forms → emails Stephenie) ────────────
+  // Paste the Access Key from your Web3Forms dashboard below. The notification
+  // email (where leads are delivered) is set in your Web3Forms account —
+  // point it at stephenie@tocadorealty.com. The endpoint stays as-is.
+  // Web3Forms access keys are public by design (they live in the page), so it's
+  // safe to commit. Until the key is set, forms show success but won't send.
+  formEndpoint: "https://api.web3forms.com/submit",
+  formAccessKey: "75666118-2f4c-481e-b4c8-a1876aed35de",
 
   // ── Top bar / hero copy ─────────────────────────────────────
   topBar: "Tocado & Company · Experienced Guidance for the Carolinas",
